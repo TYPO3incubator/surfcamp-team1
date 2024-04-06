@@ -1,6 +1,4 @@
 environment_variables:
-  # todo: change to 1, 2, 3, 4, 5 or 6
-  #team: [1-6]
   team: 1
   git_url: git@github.com:TYPO3incubator/surfcamp-assets.git
   branch: main
