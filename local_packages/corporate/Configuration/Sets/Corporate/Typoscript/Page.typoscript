@@ -1,0 +1,23 @@
+page = PAGE
+page.10 = PAGEVIEW
+
+page.10 {
+    paths.100 = EXT:corporate/Resources/Private/Templates/
+    dataProcessing {
+        10 = menu
+        10 {
+            levels = 2
+            as = headerMenu
+            expandAll = 1
+            includeSpacer = 1
+            titleField = title
+        }
+
+        20 = language-menu
+        20 {
+            languages = auto
+            as = languageMenu
+        }
+
+    }
+}
