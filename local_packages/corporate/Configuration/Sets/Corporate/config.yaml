@@ -1,4 +1,3 @@
 name: surfcamp/corporate
 label: Corporate Website
-
-# Load TypoScript, TSconfig and settings from dependencies
+#   Load TypoScript, TSconfig and settings from dependencies

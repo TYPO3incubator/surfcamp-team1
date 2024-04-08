@@ -1,9 +1,21 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 use Surfcamp\Corporate\Controller\ProductController;
 
 defined('TYPO3') or die();
+
+// Add module configuration
+ExtensionManagementUtility::addTypoScriptSetup(
+    'module.tx_form {
+    settings {
+        yamlConfigurations {
+            1505042806 = EXT:corporate/Configuration/Yaml/FormSetup.yaml
+        }
+    }
+}'
+);
 
 // Product list
 ExtensionUtility::configurePlugin(

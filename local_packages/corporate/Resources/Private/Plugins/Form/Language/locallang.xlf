@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-03-27T12:51:31Z">
+        <body>
+            <trans-unit id="formEditor.elements.ProductList.label" resname="formEditor.elements.ProductList.label" xml:space="preserve">
+                <source>Product List</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

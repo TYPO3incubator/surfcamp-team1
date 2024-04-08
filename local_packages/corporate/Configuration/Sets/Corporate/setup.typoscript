@@ -1,2 +1,6 @@
+// TODO remove once patched //
+@import "EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript"
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 @import 'Typoscript/Page.typoscript'
 @import 'Typoscript/Content.typoscript'
+@import 'Typoscript/Plugin.typoscript'
