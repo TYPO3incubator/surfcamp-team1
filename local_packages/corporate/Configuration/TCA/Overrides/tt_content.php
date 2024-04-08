@@ -6,13 +6,13 @@ defined('TYPO3') or die();
 
 (static function (): void {
     ExtensionUtility::registerPlugin(
-        'SurfcampCorporate',
+        'Corporate',
         'ProductTeaser',
         'ProductTeaser',
     );
 
     ExtensionUtility::registerPlugin(
-        'SurfcampCorporate',
+        'Corporate',
         'ProductShow',
         'ProductTeaser',
     );

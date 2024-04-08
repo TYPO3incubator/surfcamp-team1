@@ -7,14 +7,14 @@ defined('TYPO3') or die();
 
 // Product list
 ExtensionUtility::configurePlugin(
-    'SurfcampCorporate',
+    'Corporate',
     'ProductTeaser',
     [ProductController::class => 'teaser'],
     [ProductController::class => 'teaser'],
 );
 
 ExtensionUtility::configurePlugin(
-    'SurfcampCorporate',
+    'Corporate',
     'ProductShow',
     [ProductController::class => 'show'],
     [ProductController::class => 'show'],
