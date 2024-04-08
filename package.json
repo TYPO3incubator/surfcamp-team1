@@ -1,0 +1,18 @@
+{
+  "main": "src/app.js",
+  "scripts": {
+    "build:local": "webpack-cli --config ./webpack.production.config.js",
+    "build:typo3": "webpack-cli --config ./webpack.typo3.config.js",
+    "dev": "webpack-dev-server --progress",
+    "start": "node src/app.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "mini-css-extract-plugin": "^2.8.1"
+  }
+}
