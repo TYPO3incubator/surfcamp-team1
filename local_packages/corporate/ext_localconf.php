@@ -1,3 +1,21 @@
 <?php
 
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+use Surfcamp\Corporate\Controller\ProductController;
+
 defined('TYPO3') or die();
+
+// Product list
+ExtensionUtility::configurePlugin(
+    'SurfcampCorporate',
+    'ProductTeaser',
+    [ProductController::class => 'teaser'],
+    [ProductController::class => 'teaser'],
+);
+
+ExtensionUtility::configurePlugin(
+    'SurfcampCorporate',
+    'ProductShow',
+    [ProductController::class => 'show'],
+    [ProductController::class => 'show'],
+);
