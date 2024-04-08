@@ -3,7 +3,7 @@ page.10 = PAGEVIEW
 
 page.10 {
     paths.100 = EXT:corporate/Resources/Private/Templates/
-    dataProcessing{
+    dataProcessing {
         10 = language-menu
         10 {
             languages = auto

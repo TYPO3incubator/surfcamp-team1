@@ -1,0 +1,53 @@
+@import 'EXT:rtp_config_vetropack/Configuration/Sets/Corporate/TsConfig/Page/*.tsconfig'
+
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = Default
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 999
+                                        colspan = 9
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:corporate/Resources/Public/Icons/Extension.svg
+            }
+            sidebar {
+                title = Two Column
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 1
+                                    }
+                                    2 {
+                                        name = Sidebar
+                                        colPos = 2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:corporate/Resources/Public/Icons/Extension.svg
+            }
+        }
+    }
+}
