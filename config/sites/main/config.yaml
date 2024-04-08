@@ -1,5 +1,6 @@
 base: 'https://surfcamp-team1.ddev.site/'
-errorHandling: {  }
+dependencies:
+  - surfcamp/corporate
 languages:
   -
     title: English
@@ -9,7 +10,19 @@ languages:
     locale: en_US.UTF-8
     navigationTitle: English
     flag: us
+    hreflang: ''
+    websiteTitle: ''
+  -
+    title: Deutsch
+    enabled: true
+    locale: de_DE.UTF-8
+    hreflang: de_DE
+    base: /de/
+    websiteTitle: ''
+    navigationTitle: Deutsch
+    fallbackType: strict
+    fallbacks: ''
+    flag: de
+    languageId: 1
 rootPageId: 1
-routes: {  }
-dependencies:
-  - surfcamp/corporate
+websiteTitle: ''
