@@ -2,7 +2,18 @@
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="messages" date="2024-03-04T11:00:47Z">
         <body>
-
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.title">
+                <source><![CDATA[Title]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.slug">
+                <source><![CDATA[Slug]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.lead">
+                <source><![CDATA[Lead]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.image">
+                <source><![CDATA[Image]]></source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

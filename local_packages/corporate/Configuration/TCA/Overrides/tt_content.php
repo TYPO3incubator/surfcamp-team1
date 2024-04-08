@@ -14,6 +14,6 @@ defined('TYPO3') or die();
     ExtensionUtility::registerPlugin(
         'Corporate',
         'ProductShow',
-        'ProductTeaser',
+        'ProductShow',
     );
 })();
