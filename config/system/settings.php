@@ -111,6 +111,7 @@ return [
         'sitename' => 'Surfcamp Template',
         'systemMaintainers' => [
             1,
+            3,
         ],
         'trustedHostsPattern' => '.*',
     ],

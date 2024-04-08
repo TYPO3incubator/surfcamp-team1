@@ -1,0 +1,6 @@
+page = PAGE
+page.10 = PAGEVIEW
+
+page.10 {
+    paths.100 = EXT:corporate/Resources/Private/Templates/
+}

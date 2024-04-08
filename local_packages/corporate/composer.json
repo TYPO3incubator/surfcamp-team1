@@ -1,0 +1,29 @@
+{
+  "name": "surfcamp/corporation",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 CMS Core",
+  "homepage": "https://typo3.org",
+  "license": ["GPL-2.0-or-later"],
+  "authors": [{
+    "name": "TYPO3 Core Team",
+    "email": "typo3cms@typo3.org",
+    "role": "Developer"
+  }],
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "corporate"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "typo3/cms-core": "^v13.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Surfcamp\\CorporateSet\\": "Classes/"
+    }
+  }
+}
