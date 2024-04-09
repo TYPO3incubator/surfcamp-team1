@@ -72,11 +72,11 @@ ExtensionManagementUtility::addTcaSelectItem(
     'CType',
     [
 
-        'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_text_button.title',
+        'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_text_button.title',
         'value' => 'corporate_text_button',
         'icon' => 'content-form',
         'group' => 'common',
-        'description' => 'LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_text_button.description',
+        'description' => 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_text_button.description',
     ],
     'textmedia',
     'after',
@@ -93,7 +93,7 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_hero'] = [
          ',
     'columnsOverrides' => [
         'subheader' => [
-            'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:label.link_text',
+            'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:label.link_text',
         ],
         'bodytext' => [
             'config' => [
