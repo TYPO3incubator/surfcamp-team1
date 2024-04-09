@@ -25,4 +25,7 @@ page{
     includeJSFooter {
         scripts = EXT:corporate/Resources/Public/Dist/main.js
     }
+    includeCSS {
+        scripts = EXT:corporate/Resources/Public/Dist/main.css
+    }
 }

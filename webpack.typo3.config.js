@@ -5,7 +5,7 @@ const Path                 = require('path');
 
 var config = defaultConfig;
 
-config.output.path     = Path.resolve(__dirname, '../../../packages/sitepackage/Resources/Public/Dist');
+config.output.path     = Path.resolve(__dirname, './local_packages/corporate/Resources/Public/Dist');
 config.output.filename = '[name].js';
 
 config.plugins[0] = new CleanWebpackPlugin(
@@ -16,7 +16,7 @@ config.plugins[0] = new CleanWebpackPlugin(
 );
 
 config.plugins[1] = new MiniCssExtractPlugin({
-    filename: 'app.css',
+    filename: 'main.css',
     chunkFilename: '[id].css'
 });
 
