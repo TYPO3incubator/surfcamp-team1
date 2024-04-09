@@ -9,7 +9,6 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ProductController extends ActionController
 {
-
     public function __construct(protected readonly ProductRepository $productRepository)
     {
     }

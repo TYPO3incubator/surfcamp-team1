@@ -2253,7 +2253,7 @@
             "dist": {
                 "type": "path",
                 "url": "local_packages/corporate",
-                "reference": "b33e85fa6ef78fa1299885b66eee38faf9061f3b"
+                "reference": "41f6b5563ddd13756d20fc22d6d5d4df95f4ed02"
             },
             "require": {
                 "php": "^8.2",
@@ -2267,7 +2267,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Surfcamp\\CorporateSet\\": "Classes/"
+                    "Surfcamp\\Corporate\\": "Classes/"
                 }
             },
             "license": [
