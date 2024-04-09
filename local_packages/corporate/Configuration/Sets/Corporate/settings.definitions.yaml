@@ -19,3 +19,13 @@ settings:
     description: 'Link of the TikTok page'
     type: string
     default: ''
+  corporate.pages.footerPid:
+    label: 'Footer Pid'
+    description: 'page uid to display the footer'
+    type: int
+    default: 1
+  corporate.pages.logo:
+    label: 'Logo Url'
+    description: 'URL of the image to be used as logo'
+    type: string
+    default: ''
