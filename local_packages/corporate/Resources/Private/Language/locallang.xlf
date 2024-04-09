@@ -13,6 +13,12 @@
             <trans-unit id="corporate_hero.description">
                 <source>Hero Image with title text and link</source>
             </trans-unit>
+            <trans-unit id="corporate_text_button.title">
+                <source>Text Button</source>
+            </trans-unit>
+            <trans-unit id="corporate_text_button.description">
+                <source>text and with button</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

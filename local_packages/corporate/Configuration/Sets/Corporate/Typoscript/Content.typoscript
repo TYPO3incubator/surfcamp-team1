@@ -18,4 +18,8 @@ tt_content {
     corporate_hero {
         templateName = HeroElement
     }
+    corporate_text_button =< lib.contentElement
+    corporate_text_button {
+        templateName = TextButton
+    }
 }
