@@ -1,0 +1,24 @@
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    default: /
+    suffix: /
+    index: ''
+    map:
+      /: 0
+  ProductPlugin:
+    type: Extbase
+    extension: Corporate
+    plugin: ProductShow
+    defaultController: 'Product::show'
+    routes:
+      - routePath: '{product}-product'
+        _controller: 'Product::show'
+        _arguments:
+          product: 'product'
+    aspects:
+      product:
+        type: PersistedAliasMapper
+        tableName: tx_surfcampcorporate_domain_model_product
+        routeFieldName: slug
+routes: {  }

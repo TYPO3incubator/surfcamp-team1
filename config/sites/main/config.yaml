@@ -1,3 +1,6 @@
+imports:
+  - { resource: "../defaults.yaml" }
+
 base: 'https://surfcamp-team1.ddev.site/'
 dependencies:
   - surfcamp/corporate
