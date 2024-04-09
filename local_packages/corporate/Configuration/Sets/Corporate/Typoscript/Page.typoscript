@@ -1,7 +1,7 @@
 page = PAGE
 page.10 = PAGEVIEW
 
-page{
+page {
     10 {
         paths.100 = EXT:corporate/Resources/Private/Templates/
         dataProcessing {
@@ -14,6 +14,17 @@ page{
                 titleField = title
             }
 
+            30 = menu
+            30 {
+                levels = 2
+                as = FooterMenu
+                expandAll = 1
+                includeSpacer = 1
+                titleField = title
+                special = directory
+                special.value = {$corporate.pages.footerPid}
+            }
+
             20 = language-menu
             20 {
                 languages = auto
@@ -22,9 +33,11 @@ page{
 
         }
     }
+
     includeJSFooter {
         scripts = EXT:corporate/Resources/Public/Dist/main.js
     }
+
     includeCSS {
         scripts = EXT:corporate/Resources/Public/Dist/main.css
     }
