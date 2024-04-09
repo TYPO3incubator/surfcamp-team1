@@ -3,15 +3,23 @@ mod {
         common {
             elements {
                 corporate_hero {
-                    iconIdentifier = corporate_hero
+                    iconIdentifier = mimetypes-x-content-image
                     title = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_hero.title
                     description = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_hero.description
                     tt_content_defValues {
                         CType = corporate_hero
                     }
                 }
+                corporate_text_button {
+                    iconIdentifier = content-form
+                    title = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_hero.title
+                    description = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_hero.description
+                    tt_content_defValues {
+                        CType = corporate_text_button
+                    }
+                }
             }
-            show := addToList(corporate_hero)
+            show := addToList(corporate_hero, corporate_text_button)
         }
     }
 }
