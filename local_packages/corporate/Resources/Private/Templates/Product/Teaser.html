@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{products}">
+    <div class="card-group">
+        <f:for as="product" each="{products}">
+            <div class="card">
+                <f:image src="{product.image}" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">{procuts.title}</h5>
+                    <p class="card-text">{product.lead}</p>
+                </div>
+            </div>
+        </f:for>
+    </div>
+</f:if>
+
+</html>
