@@ -4,10 +4,13 @@
     <div class="card-group">
         <f:for as="product" each="{products}">
             <div class="card">
-                <f:image src="{product.image}" class="card-img-top" />
+                <f:image image="{product.image.originalResource}" width="200c" height="200c" class="card-img-top" />
                 <div class="card-body">
                     <h5 class="card-title">{procuts.title}</h5>
                     <p class="card-text">{product.lead}</p>
+                    <f:link.action class="card-link" action="show" pageUid="2" arguments="{product: product}">
+                        Details
+                    </f:link.action>
                 </div>
             </div>
         </f:for>

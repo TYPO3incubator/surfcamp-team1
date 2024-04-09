@@ -3,7 +3,7 @@
 namespace Surfcamp\Corporate\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
-use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
+use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 
 class Product extends AbstractEntity
 {
@@ -14,7 +14,7 @@ class Product extends AbstractEntity
     protected $title = '';
 
     /**
-     * @var \TYPO3\CMS\Core\Resource\FileReference
+     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      */
     protected $image = '';
 
@@ -22,11 +22,6 @@ class Product extends AbstractEntity
      * @var string
      */
     protected $lead = '';
-
-    /**
-     * @var ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     */
-    protected $documents = null;
 
     /**
      * @var \TYPO3\CMS\Extbase\Domain\Model\Category
@@ -71,16 +66,6 @@ class Product extends AbstractEntity
     public function setLead(string $lead): void
     {
         $this->lead = $lead;
-    }
-
-    public function getDocuments(): ?ObjectStorage
-    {
-        return $this->documents;
-    }
-
-    public function setDocuments(?ObjectStorage $documents): void
-    {
-        $this->documents = $documents;
     }
 
     public function getCategory(): ?\TYPO3\CMS\Extbase\Domain\Model\Category
