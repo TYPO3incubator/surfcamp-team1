@@ -14,8 +14,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Content
-                                        colPos = 999
-                                        colspan = 9
+                                        colPos = 0
                                     }
                                 }
                             }
@@ -35,11 +34,11 @@ mod {
                                 columns {
                                     1 {
                                         name = Content
-                                        colPos = 1
+                                        colPos = 0
                                     }
                                     2 {
                                         name = Sidebar
-                                        colPos = 2
+                                        colPos = 1
                                     }
                                 }
                             }
