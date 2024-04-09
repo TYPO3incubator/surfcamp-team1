@@ -9,3 +9,13 @@ lib.dynamicContent {
     }
     slide.field = slide
 }
+lib.contentElement {
+    templateRootPaths.100 = EXT:corporate/Resources/Private/Content/
+}
+
+tt_content {
+    corporate_hero =< lib.contentElement
+    corporate_hero {
+        templateName = HeroElement
+    }
+}
