@@ -8,8 +8,8 @@
                 <div class="card-body">
                     <h5 class="card-title">{procuts.title}</h5>
                     <p class="card-text">{product.lead}</p>
-                    <f:link.action class="card-link" action="show" pageUid="2" arguments="{product: product}">
-                        Details
+                    <f:link.action class="card-link" action="show" pageUid="{settings.showPid}" arguments="{product: product}">
+                        <f:translate key="product.teaser.link_label" />
                     </f:link.action>
                 </div>
             </div>
