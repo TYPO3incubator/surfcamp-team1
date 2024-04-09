@@ -1,0 +1,21 @@
+settings:
+  corporate.social_media.facebook:
+    label: 'Facebook Page Link'
+    description: 'Link of the Facebook page'
+    type: string
+    default: ''
+  corporate.social_media.instagram:
+    label: 'Instagram Page Link'
+    description: 'Link of the Instagram page'
+    type: string
+    default: ''
+  corporate.social_media.x:
+    label: 'X Page Link'
+    description: 'Link of the X page'
+    type: string
+    default: ''
+  corporate.social_media.tiktok:
+    label: 'TikTok Page Link'
+    description: 'Link of the TikTok page'
+    type: string
+    default: ''

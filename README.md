@@ -49,3 +49,12 @@ update the sources in `./vendor/` (TYPO3 specific packages will be symlinked).
 
 Further details are mentioned in the [TYPO3 Contribution Guide](https://docs.typo3.org/m/typo3/guide-contributionworkflow/main/en-us/Index.html),
 more specifically in the [Git Setup](https://docs.typo3.org/m/typo3/guide-contributionworkflow/main/en-us/Setup/Git/Index.html) section of that guide.
+
+### Frontend
+
+```npm install```
+
+```npm run build:typo3              // Frontend dev compilation into local_packages/corporate/Resources/Public/Dist```
+```npm run watch                    // Frontend dev watcher into local_packages/corporate/Resources/Public/Dist```
+
+######Tested with: Node v14.19.3

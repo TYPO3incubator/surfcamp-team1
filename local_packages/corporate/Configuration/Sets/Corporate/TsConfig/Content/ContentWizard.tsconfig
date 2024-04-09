@@ -1,0 +1,17 @@
+mod {
+    wizards.newContentElement.wizardItems {
+        common {
+            elements {
+                corporate_hero {
+                    iconIdentifier = corporate_hero
+                    title = LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_hero.title
+                    description = LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_hero.description
+                    tt_content_defValues {
+                        CType = corporate_hero
+                    }
+                }
+            }
+            show := addToList(corporate_hero)
+        }
+    }
+}
