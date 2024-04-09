@@ -79,12 +79,12 @@ ExtensionManagementUtility::addTcaSelectItem(
     'textmedia',
     'after',
 );
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['corporate_hero'] = 'mimetypes-x-content-image';
-$GLOBALS['TCA']['tt_content']['types']['corporate_hero'] = [
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['corporate_text_button'] = 'content-form';
+$GLOBALS['TCA']['tt_content']['types']['corporate_text_button'] = [
     'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                --palette--;;general,
-                bodytext, header_link, subheader,
+              bodytext, header_link, subheader,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                --palette--;;hidden,
                --palette--;;access,

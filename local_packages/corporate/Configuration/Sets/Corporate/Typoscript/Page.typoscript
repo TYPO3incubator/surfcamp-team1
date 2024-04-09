@@ -4,6 +4,9 @@ page.10 = PAGEVIEW
 page {
     10 {
         paths.100 = EXT:corporate/Resources/Private/Templates/
+        variables{
+           prods < lib.products
+        }
         dataProcessing {
             10 = menu
             10 {
