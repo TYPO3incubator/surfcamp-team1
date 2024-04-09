@@ -1,0 +1,8 @@
+TCEMAIN.linkHandler.product {
+    handler = TYPO3\CMS\Backend\LinkHandler\RecordLinkHandler
+    label = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:link.product
+    configuration {
+        table = tx_surfcampcorporate_domain_model_product
+    }
+    scanAfter = page
+}

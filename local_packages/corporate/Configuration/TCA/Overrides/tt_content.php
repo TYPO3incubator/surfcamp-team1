@@ -5,6 +5,8 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
 
+$translation = 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf';
+
 (static function (): void {
     ExtensionUtility::registerPlugin(
         'Corporate',
@@ -28,11 +30,11 @@ ExtensionManagementUtility::addTcaSelectItem(
     'CType',
     [
 
-        'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_hero.title',
+        'label' => $translation . ':corporate_hero.title',
         'value' => 'corporate_hero',
         'icon' => 'mimetypes-x-content-image',
         'group' => 'common',
-        'description' => 'LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_hero.description',
+        'description' => $translation . ':corporate_hero.description',
     ],
     'textmedia',
     'after',
@@ -49,7 +51,7 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_hero'] = [
          ',
     'columnsOverrides' => [
         'subheader' => [
-            'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:label.link_text',
+            'label' => $translation . ':label.link_text',
         ],
         'media' => [
             'config' => [

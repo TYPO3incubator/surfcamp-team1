@@ -17,6 +17,20 @@
             <trans-unit id="tx_surfcampcorporate_domain_model_product.image">
                 <source><![CDATA[Image]]></source>
             </trans-unit>
+            <!-- labels -->
+            <trans-unit id="label.link_text">
+                <source>Link text</source>
+            </trans-unit>
+            <!-- CE -->
+            <trans-unit id="corporate_hero.title">
+                <source>Hero element</source>
+            </trans-unit>
+            <trans-unit id="corporate_hero.description">
+                <source>Hero Image with title text and link</source>
+            </trans-unit>
+            <trans-unit id="link.product">
+                <source>Product</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

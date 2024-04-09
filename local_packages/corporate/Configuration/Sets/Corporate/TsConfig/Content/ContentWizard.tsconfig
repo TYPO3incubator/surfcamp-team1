@@ -4,8 +4,8 @@ mod {
             elements {
                 corporate_hero {
                     iconIdentifier = corporate_hero
-                    title = LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_hero.title
-                    description = LLL:EXT:corporate/Resources/Private/Language/locallang.xlf:corporate_hero.description
+                    title = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_hero.title
+                    description = LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_hero.description
                     tt_content_defValues {
                         CType = corporate_hero
                     }

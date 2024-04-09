@@ -1,0 +1,8 @@
+config.recordLinks.product {
+    forceLink = 0
+    typolink {
+        parameter = {$corporate.pages.productShowPid}
+        additionalParams.data = field:uid
+        additionalParams.wrap = &tx_corporate_productshow[product]=|&tx_corporate_productshow[controller]=Product&tx_corporate_productshow[action]=show
+    }
+}
