@@ -1,0 +1,54 @@
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = Default
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                icon = EXT:corporate/Resources/Public/Icons/Extension.svg
+            }
+
+            sidebar {
+                title = Two Column
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 0
+                                    }
+
+                                    2 {
+                                        name = Sidebar
+                                        colPos = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                icon = EXT:corporate/Resources/Public/Icons/Extension.svg
+            }
+        }
+    }
+}
