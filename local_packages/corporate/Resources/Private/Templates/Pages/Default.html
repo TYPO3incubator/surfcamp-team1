@@ -5,8 +5,6 @@
 <f:section name="Main">
     <f:render partial="Nav" arguments="{_all}"/>
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos:0}"/>
-    <f:Debug>{f:cObject(typoscriptObjectPath: 'lib.products')}</f:Debug>
-    <f:Debug>{_all}</f:Debug>
     <f:render partial="Footer" arguments="{_all}"/>
 </f:section>
 
