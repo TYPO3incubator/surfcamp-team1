@@ -1,12 +1,12 @@
 <?php
 
-$tableName   = 'tx_surfcampcorporate_domain_model_card_item';
+$tableName   = 'tx_surfcampcorporate_domain_model_accordion_item';
 $translation = 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:' . $tableName;
 
 return [
     'ctrl'      => [
         'label'                    => 'header',
-        'cacheTags'                => 'card_item',
+        'cacheTags'                => 'accordion_item',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
         'title'                    => $translation,
@@ -34,12 +34,9 @@ return [
         '0' => [
             'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+            --palette--;' . $translation . 'tca.palette.title;title,
             header,
-            date,
             bodytext,
-            image,
-            link,
-            link_label,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access
@@ -68,15 +65,6 @@ return [
                 'eval' => 'trim,required',
             ],
         ],
-        'date' => [
-            'exclude' => true,
-            'label' => $translation . '.date',
-            'config' => [
-                'type' => 'datetime',
-                'format' => 'date',
-                'default' => 0,
-            ],
-        ],
         'bodytext' => [
             'l10n_mode' => 'prefixLangTitle',
             'label' => $translation . '.bodytext',
@@ -84,35 +72,6 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
-            ],
-        ],
-        'image' => [
-            'label'  => $translation . '.image',
-            'config' => [
-                'type'     => 'file',
-                'minitems' => 1,
-                'maxitems' => 1,
-                'allowed'  => 'common-image-types',
-            ],
-        ],
-        'link' => [
-            'exclude' => true,
-            'label' => $translation . '.link',
-            'config' => [
-                'type' => 'link',
-                'size' => 50,
-                'allowedTypes' => ['url']
-            ],
-        ],
-        'link_label' => [
-            'exclude' => true,
-            'label' => $translation . '.link_label',
-            'config' => [
-                'type' => 'link',
-                'size' => 50,
-                'appearance' => [
-                    'browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-                ],
             ],
         ],
     ],

@@ -18,8 +18,35 @@
             <trans-unit id="tx_surfcampcorporate_domain_model_product.image">
                 <source><![CDATA[Image]]></source>
             </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.sizes">
+                <source><![CDATA[Sizes]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.accordion_items">
+                <source><![CDATA[Additional information]]></source>
+            </trans-unit>
             <trans-unit id="tx_surfcampcorporate_domain_model_product.tabs.taxonomy">
                 <source>Taxonomy</source>
+            </trans-unit>
+
+            <!-- product sizes -->
+            <trans-unit id="tx_surfcampcorporate_domain_model_product_size">
+                <source><![CDATA[Product Size]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product_size.title">
+                <source><![CDATA[Title]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product_size.bodytext">
+                <source><![CDATA[Text]]></source>
+            </trans-unit>
+            <!-- accordion items -->
+            <trans-unit id="tx_surfcampcorporate_domain_model_accordion_item">
+                <source><![CDATA[Accordion Item]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_accordion_item.header">
+                <source><![CDATA[Header]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_accordion_item.bodytext">
+                <source><![CDATA[Content]]></source>
             </trans-unit>
             <!-- labels -->
             <trans-unit id="label.link_text">

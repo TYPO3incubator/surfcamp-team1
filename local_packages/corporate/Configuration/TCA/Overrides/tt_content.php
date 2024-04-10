@@ -70,7 +70,6 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-
         'label' => $translation . 'corporate_text_button.title',
         'value' => 'corporate_text_button',
         'icon' => 'content-form',
@@ -129,7 +128,6 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-
         'label' => $translation . 'corporate_card.title',
         'value' => 'corporate_card',
         'icon' => 'mimetypes-x-content-link',

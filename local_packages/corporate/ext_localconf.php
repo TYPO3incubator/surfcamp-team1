@@ -31,3 +31,7 @@ ExtensionUtility::configurePlugin(
     [ProductController::class => 'show'],
     [ProductController::class => 'show'],
 );
+
+if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['productSize'])) {
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['productSize'] = 'EXT:corporate/Configuration/RTE/ProductSize.yaml';
+}
