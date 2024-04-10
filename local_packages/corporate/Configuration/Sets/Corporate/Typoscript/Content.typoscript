@@ -15,12 +15,6 @@ lib.contentElement {
     templateRootPaths.100 = EXT:corporate/Resources/Private/Content/
 }
 
-lib.products = RECORDS
-lib.products {
-    dontCheckPid = 1
-    tables = tx_surfcampcorporate_domain_model_product
-}
-
 tt_content {
     corporate_hero =< lib.contentElement
     corporate_hero {
