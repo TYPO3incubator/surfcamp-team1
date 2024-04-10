@@ -1,0 +1,28 @@
+h1{
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: $spacing-xl;
+}
+h2,h3{
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  margin-bottom: $spacing-xl;
+}
+p{
+  &.large{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  &.medium{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+  &.small{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+p,li,div,span{
+  font-size: 1rem;
+  line-height: 1rem;
+}

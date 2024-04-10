@@ -1,8 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{f:uri.page(pageUid: site.rootPageId)}"><img src="{settings.corporate.page.logo}" alt="LOGO"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="{f:uri.page(pageUid: site.rootPageId)}">
+            <img src="{settings.corporate.page.logo}" alt="LOGO">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle
+          navigation"
+        >
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -11,7 +22,12 @@
                     <li class="nav-item {f:if(condition: menuItem.hasSubpages, then: 'dropdown')}">
                         <f:if condition="{menuItem.hasSubpages}">
                             <f:then>
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <a
+                                  class="nav-link dropdown-toggle"
+                                  data-bs-toggle="dropdown"
+                                  href="#"
+                                  role="button"
+                                  aria-expanded="false">
                                     {menuItem.title}
                                 </a>
                                 <div class="dropdown-menu">
@@ -19,8 +35,9 @@
                                         <f:if condition="{menuItemLevel2.spacer}">
                                             <f:then><div class="dropdown-divider"></div></f:then>
                                             <f:else>
-                                                <f:link.page pageUid="{menuItemLevel2.data.uid}"
-                                                             class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
+                                                <f:link.page
+                                                  pageUid="{menuItemLevel2.data.uid}"
+                                                  class="dropdown-item {f:if(condition: menuItemLevel2.active, then: 'active')}">
                                                     {menuItemLevel2.title}
                                                 </f:link.page>
                                             </f:else>
@@ -29,7 +46,9 @@
                                 </div>
                             </f:then>
                             <f:else>
-                                <f:link.page pageUid="{menuItem.data.uid}" class="nav-link {f:if(condition: menuItem.active, then:'active')}">
+                                <f:link.page
+                                  pageUid="{menuItem.data.uid}"
+                                  class="nav-link {f:if(condition: menuItem.active, then:'active')}">
                                     {menuItem.title}
                                 </f:link.page>
                             </f:else>
@@ -42,7 +61,12 @@
             <ul class="navbar-nav language-nav">
                 <f:for each="{languageMenu}" as="lang">
                     <li class="nav-item">
-                        <a href="{lang.link}" class="language-link{f:if(condition: '{lang.active}', then: ' active')}">{lang.navigationTitle}</a>
+                        <a
+                          href="{lang.link}"
+                          class="language-link{f:if(condition: '{lang.active}', then: ' active')}"
+                        >
+                            {lang.navigationTitle}
+                        </a>
                     </li>
                 </f:for>
             </ul>
