@@ -41,10 +41,10 @@ magephp:
         - exec: { cmd: "[ -d ../../../cachetool ] || mkdir -p ../../../cachetool" }
         - exec: { cmd: "[ -f ../../../cachetool/cachetool.phar ] || curl -o ../../../cachetool/cachetool.phar https://gordalina.github.io/cachetool/downloads/cachetool.phar && chmod +x ../../../cachetool/cachetool.phar" }
         - exec: { cmd: "/usr/bin/php ../../../cachetool/cachetool.phar opcache:reset --fcgi=/var/run/team1.surfcamp.typo3.com_fpm.sock --tmp-dir=/srv/vhosts/team1.surfcamp.typo3.com/site/cachetool" }
-        - exec: { cmd: '/usr/bin/php ./bin/typo3 backend:lock', timeout: 9000 }
+        #- exec: { cmd: '/usr/bin/php ./bin/typo3 backend:lock', timeout: 9000 }
         - exec: { cmd: '/usr/bin/php ./bin/typo3 extension:setup', timeout: 9000 }
-        - exec: { cmd: '/usr/bin/php ./bin/typo3 cache:flush', timeout: 9000 }
         - exec: { cmd: '/usr/bin/php ./bin/typo3 cache:warmup', timeout: 9000 }
+        - exec: { cmd: '/usr/bin/php ./bin/typo3 cache:flush -g pages', timeout: 9000 }
         - exec: { cmd: '/usr/bin/php ./bin/typo3 upgrade:run', timeout: 9000 }
-        - exec: { cmd: '/usr/bin/php ./bin/typo3 backend:unlock', timeout: 9000 }
+        #- exec: { cmd: '/usr/bin/php ./bin/typo3 backend:unlock', timeout: 9000 }
       post-deploy:

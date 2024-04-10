@@ -4,6 +4,7 @@ namespace Surfcamp\Corporate\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class Product extends AbstractEntity
 {
@@ -29,6 +30,16 @@ class Product extends AbstractEntity
     protected $categories = null;
 
     /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Surfcamp\Corporate\Domain\Model\ProductSize>
+     */
+    protected $sizes;
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Surfcamp\Corporate\Domain\Model\AccordionItem>
+     */
+    protected $accordionItems;
+
+    /**
      * @var \DateTime
      */
     protected $starttime = 0;
@@ -37,6 +48,17 @@ class Product extends AbstractEntity
      * @var \DateTime
      */
     protected $endtime = 0;
+
+    public function __construct()
+    {
+        $this->initializeObject();
+    }
+
+    public function initializeObject(): void
+    {
+        $this->accordionItems = new ObjectStorage();
+        $this->sizes          = new ObjectStorage();
+    }
 
     public function getTitle(): string
     {
@@ -56,6 +78,16 @@ class Product extends AbstractEntity
     public function getCategories(): ?\TYPO3\CMS\Extbase\Persistence\ObjectStorage
     {
         return $this->categories;
+    }
+
+    public function getSizes(): \TYPO3\CMS\Extbase\Persistence\ObjectStorage
+    {
+        return $this->sizes;
+    }
+
+    public function getAccordionItems(): \TYPO3\CMS\Extbase\Persistence\ObjectStorage
+    {
+        return $this->accordionItems;
     }
 
     public function getStarttime(): \DateTime|int
