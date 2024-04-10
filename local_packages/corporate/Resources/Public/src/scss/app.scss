@@ -1,3 +1,20 @@
+
+
 @import 'general';
+
+@import "atoms/all";
 @import "mixins/all";
+@import "partials/all";
 @import "variables/all";
+
+
+//Grid system with container
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+
+//Mixins for carousel
+
+//Carousel and mixins
+@import "node_modules/bootstrap/scss/mixins/transition";
+@import "node_modules/bootstrap/scss/mixins/clearfix";
+@import "node_modules/bootstrap/scss/mixins/color-mode";
+@import "node_modules/bootstrap/scss/carousel";
