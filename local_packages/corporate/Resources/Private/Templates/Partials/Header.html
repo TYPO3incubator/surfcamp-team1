@@ -1,0 +1,67 @@
+<script lang="ts">
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header-scroll").style.height = "82px";
+    } else {
+      document.getElementById("header-scroll").style.height = "160px";
+    }
+  }
+</script>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+  <header class="base-header" id="header-scroll">
+    <div class="base-header--logo">
+      <a href="{f:uri.page(pageUid: site.rootPageId)}" class="base-header--logo-image">
+        <img src="{settings.corporate.page.logo}" alt="LOGO">
+      </a>
+    </div>
+    <span class="base-header--navigation">
+      <f:render partial="Nav" arguments="{headerMenu:headerMenu, languageMenu:languageMenu}"/>
+    </span>
+  </header>
+<div class="base-header__spacing"></div>
+</html>
+
+<style lang="scss">
+  .base-header {
+    position: fixed;
+    background-color: rgb(1,106,112);
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #header-scroll {
+    height: 160px;
+    transition: 0.2s;
+  }
+
+  .base-header--logo{
+    position: absolute;
+    margin:0 auto;
+    width: 100%;
+    text-align:center;
+  }
+  .base-header--logo-image{
+    width: 160px;
+    background-color: white;
+  }
+
+  .base-header--navigation{
+    display: none;
+  }
+
+  .base-header__spacing{
+    height: 24px;
+    background-color: white;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .base-header--navigation{
+      display: inherit;
+    }
+  }
+
+
+</style>
