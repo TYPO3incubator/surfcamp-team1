@@ -26,8 +26,8 @@ tt_content {
         templateName = TextButton
     }
 
-    corporate_cta_teaser =< lib.contentElement
-    corporate_cta_teaser {
-        templateName = CtaTeaser
+    corporate_card =< lib.contentElement
+    corporate_card {
+        templateName = Card
     }
 }

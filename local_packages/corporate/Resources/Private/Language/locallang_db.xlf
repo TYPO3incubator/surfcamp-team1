@@ -37,31 +37,31 @@
             <trans-unit id="corporate_text_button.description">
                 <source>text and with button</source>
             </trans-unit>
-            <trans-unit id="corporate_cta_teaser.title">
+            <trans-unit id="corporate_card.title">
                 <source>Social Media Teaser</source>
             </trans-unit>
-            <trans-unit id="corporate_cta_teaser.description">
+            <trans-unit id="corporate_card.description">
                 <source>Teaser element with link to external page</source>
             </trans-unit>
-            <trans-unit id="cta_teaser_items">
+            <trans-unit id="card_items">
                 <source>Teaser Items</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_cta_teaser_item.header">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.header">
                 <source>Heading</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_cta_teaser_item.date">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.date">
                 <source>Date</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_cta_teaser_item.bodytext">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.bodytext">
                 <source>Text</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_cta_teaser_item.image">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.image">
                 <source>Image</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_cta_teaser_item.link">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.link">
                 <source>Link</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_cta_teaser_item.link_label">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.link_label">
                 <source>Link label</source>
             </trans-unit>
         </body>

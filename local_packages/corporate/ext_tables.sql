@@ -2,7 +2,7 @@
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
-    cta_teaser_items int(11) unsigned DEFAULT '0' NOT NULL
+    card_items int(11) unsigned DEFAULT '0' NOT NULL
 );
 
 #
@@ -24,9 +24,9 @@ CREATE TABLE tx_surfcampcorporate_domain_model_product (
 );
 
 #
-# Table structure for table 'tx_surfcampcorporate_domain_model_cta_teaser_item'
+# Table structure for table 'tx_surfcampcorporate_domain_model_card_item'
 #
-CREATE TABLE tx_surfcampcorporate_domain_model_cta_teaser_item (
+CREATE TABLE tx_surfcampcorporate_domain_model_card_item (
     header     varchar(255)  DEFAULT ''  NOT NULL,
     date       varchar(2048) DEFAULT ''  NOT NULL,
     bodytext   text,
