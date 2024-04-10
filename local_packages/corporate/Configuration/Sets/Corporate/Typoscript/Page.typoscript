@@ -17,8 +17,8 @@ page {
                 titleField = title
             }
 
-            30 = menu
-            30 {
+            20 = menu
+            20 {
                 levels = 2
                 as = FooterMenu
                 expandAll = 1
@@ -28,10 +28,17 @@ page {
                 special.value = {$corporate.pages.footerPid}
             }
 
-            20 = language-menu
-            20 {
+            30 = language-menu
+            30 {
                 languages = auto
                 as = languageMenu
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            40 {
+                special = rootline
+                special.range = 0|-1
+                includeNotInMenu = 0
+                as = breadcrumb
             }
 
         }
