@@ -105,15 +105,15 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_text_button'] = [
 ];
 
 ######################################
-#       CTA Teaser              #
+#       Card                         #
 ######################################
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'cta_teaser_items' => [
-        'label' => $translation . 'cta_teaser_items',
+    'card_items' => [
+        'label' => $translation . 'card_items',
         'config' => [
             'type' => 'inline',
-            'foreign_table' => 'tx_surfcampcorporate_domain_model_cta_teaser_item',
+            'foreign_table' => 'tx_surfcampcorporate_domain_model_card_item',
             'foreign_field' => 'parent_id',
             'foreign_table_field' => 'tablenames',
             'appearance' => [
@@ -130,21 +130,21 @@ ExtensionManagementUtility::addTcaSelectItem(
     'CType',
     [
 
-        'label' => $translation . 'corporate_cta_teaser.title',
-        'value' => 'corporate_cta_teaser',
+        'label' => $translation . 'corporate_card.title',
+        'value' => 'corporate_card',
         'icon' => 'mimetypes-x-content-link',
         'group' => 'common',
-        'description' => $translation . 'corporate_cta_teaser.description',
+        'description' => $translation . 'corporate_card.description',
     ],
     'textmedia',
     'after',
 );
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['corporate_cta_teaser'] = 'mimetypes-x-content-link';
-$GLOBALS['TCA']['tt_content']['types']['corporate_cta_teaser'] = [
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['corporate_card'] = 'mimetypes-x-content-link';
+$GLOBALS['TCA']['tt_content']['types']['corporate_card'] = [
     'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                --palette--;;general,
-              cta_teaser_items,
+              card_items,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                --palette--;;hidden,
                --palette--;;access,

@@ -1,12 +1,12 @@
 <?php
 
-$tableName   = 'tx_surfcampcorporate_domain_model_cta_teaser_item';
+$tableName   = 'tx_surfcampcorporate_domain_model_card_item';
 $translation = 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:' . $tableName;
 
 return [
     'ctrl'      => [
         'label'                    => 'header',
-        'cacheTags'                => 'cta_teaser_item',
+        'cacheTags'                => 'card_item',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
         'title'                    => $translation,
