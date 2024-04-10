@@ -36,7 +36,9 @@ return [
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             --palette--;;title,
             lead,
-            image,
+            images,
+            sizes,
+            accordion_items,
             --div--;' . $translation . '.tabs.taxonomy,
             categories,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
@@ -108,6 +110,34 @@ return [
                 'minitems' => 1,
                 'maxitems' => 9,
                 'allowed'  => 'common-image-types',
+            ],
+        ],
+        'sizes' => [
+            'label' => $translation . '.sizes',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_surfcampcorporate_domain_model_product_size',
+                'foreign_field' => 'parent_id',
+                'foreign_table_field' => 'tablenames',
+                'appearance' => [
+                    'showSynchronizationLink' => true,
+                    'showAllLocalizationLink' => true,
+                    'showPossibleLocalizationRecords' => true,
+                ],
+            ],
+        ],
+        'accordion_items' => [
+            'label' => $translation . '.accordion_items',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_surfcampcorporate_domain_model_accordion_item',
+                'foreign_field' => 'parent_id',
+                'foreign_table_field' => 'tablenames',
+                'appearance' => [
+                    'showSynchronizationLink' => true,
+                    'showAllLocalizationLink' => true,
+                    'showPossibleLocalizationRecords' => true,
+                ],
             ],
         ],
         'categories' => [

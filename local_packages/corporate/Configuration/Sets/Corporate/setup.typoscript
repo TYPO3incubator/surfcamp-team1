@@ -4,3 +4,5 @@
 @import 'Typoscript/Page.typoscript'
 @import 'Typoscript/Content.typoscript'
 @import 'Typoscript/Plugin.typoscript'
+
+config.contentObjectExceptionHandler = 0

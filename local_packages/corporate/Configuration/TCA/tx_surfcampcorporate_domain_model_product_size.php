@@ -1,12 +1,12 @@
 <?php
 
-$tableName   = 'tx_surfcampcorporate_domain_model_card_item';
+$tableName   = 'tx_surfcampcorporate_domain_model_product_size';
 $translation = 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:' . $tableName;
 
 return [
     'ctrl'      => [
-        'label'                    => 'header',
-        'cacheTags'                => 'card_item',
+        'label'                    => 'title',
+        'cacheTags'                => 'product_size',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
         'title'                    => $translation,
@@ -35,12 +35,8 @@ return [
         '0' => [
             'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-            header,
-            date,
+            title,
             bodytext,
-            image,
-            link,
-            link_label,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access
@@ -61,21 +57,12 @@ return [
         ],
     ],
     'columns'   => [
-        'header' => [
+        'title' => [
             'exclude' => 1,
-            'label'   => $translation . '.header',
+            'label'   => $translation . '.title',
             'config'  => [
                 'type' => 'input',
                 'eval' => 'trim,required',
-            ],
-        ],
-        'date' => [
-            'exclude' => true,
-            'label' => $translation . '.date',
-            'config' => [
-                'type' => 'datetime',
-                'format' => 'date',
-                'default' => 0,
             ],
         ],
         'bodytext' => [
@@ -85,35 +72,8 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
-            ],
-        ],
-        'image' => [
-            'label'  => $translation . '.image',
-            'config' => [
-                'type'     => 'file',
-                'minitems' => 1,
-                'maxitems' => 1,
-                'allowed'  => 'common-image-types',
-            ],
-        ],
-        'link' => [
-            'exclude' => true,
-            'label' => $translation . '.link',
-            'config' => [
-                'type' => 'link',
-                'size' => 50,
-                'allowedTypes' => ['url']
-            ],
-        ],
-        'link_label' => [
-            'exclude' => true,
-            'label' => $translation . '.link_label',
-            'config' => [
-                'type' => 'link',
-                'size' => 50,
-                'appearance' => [
-                    'browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-                ],
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default'
             ],
         ],
     ],
