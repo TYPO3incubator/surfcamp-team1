@@ -14,9 +14,9 @@ class Product extends AbstractEntity
     protected $title = '';
 
     /**
-     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
      */
-    protected $image = '';
+    protected $images = '';
 
     /**
      * @var string
@@ -43,9 +43,9 @@ class Product extends AbstractEntity
         return $this->title;
     }
 
-    public function getImage(): string|FileReference
+    public function getImages(): \TYPO3\CMS\Extbase\Persistence\ObjectStorage|string
     {
-        return $this->image;
+        return $this->images;
     }
 
     public function getLead(): string
