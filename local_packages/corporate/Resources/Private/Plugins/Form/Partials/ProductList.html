@@ -1,10 +1,14 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace sc=Surfcamp\Corporate\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<sc:getProducts/>
 <formvh:renderRenderable renderable="{element}">
     <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
         <div id="{element.uniqueIdentifier}" class="inputs-list">
-            <f:for each="{f:cObject(typoscriptObjectPath: 'lib.products')}" as="product" iteration="idIterator">
+            <f:for each="{products}" as="product" iteration="idIterator">
                 <div class="form-check">
                     <label class="form-check-label" for="{element.uniqueIdentifier}-{idIterator.index}">
+                        <!--                        TODO: change uid with referenceId -->
                         <f:form.checkbox
                                 property="{element.identifier}"
                                 multiple="1"
