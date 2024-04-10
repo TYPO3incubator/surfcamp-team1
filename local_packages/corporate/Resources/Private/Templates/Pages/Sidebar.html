@@ -1,7 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default"/>
-
+<f:render partial="Nav" arguments="{_all}"/>
+<f:render partial="Breadcrumb" arguments="{_all}"/>
 <f:section name="Main">
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos:0}"/>
 </f:section>
@@ -9,5 +10,6 @@
 <f:section name="Main">
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos:1}"/>
 </f:section>
+<f:render partial="Footer" arguments="{_all}"/>
 
 </html>
