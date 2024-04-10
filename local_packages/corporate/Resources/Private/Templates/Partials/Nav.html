@@ -1,31 +1,37 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<nav class="base-nav">
-  <ul>
+  <nav class="base-nav">
     <f:for each="{headerMenu}" as="menuItem">
-      <li>
+      <span>
         <a class="nav--menu-item" href="{menuItem.link}">{menuItem.title}</a>
-      </li>
+      </span>
     </f:for>
-  </ul>
-  <select>
-    <f:for each="{languageMenu}" as="lang">
-      <option value="{lang.link}">
-        {lang.navigationTitle}
-      </option>
-    </f:for>
-  </select>
-</nav>
+    <select>
+      <f:for each="{languageMenu}" as="lang">
+        <option value="{lang.link}">
+          {lang.navigationTitle}
+        </option>
+      </f:for>
+    </select>
+  </nav>
 </html>
 
 <style>
-  .base-nav, .base-nav ul {
+  .base-nav{
     display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
   }
 
   .nav--menu-item {
     text-decoration: none;
     color: white;
+  }
+
+  @media (min-width: 768px) {
+    .base-nav {
+      justify-content: flex-end;
+      gap: 1rem;
+    }
   }
 </style>
