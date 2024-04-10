@@ -14,8 +14,14 @@ mod {
                         CType = corporate_text_button
                     }
                 }
+                corporate_cta_teaser {
+                    iconIdentifier = mimetypes-x-content-link
+                    tt_content_defValues {
+                        CType = corporate_cta_teaser
+                    }
+                }
             }
-            show := addToList(corporate_hero, corporate_text_button)
+            show := addToList(corporate_hero, corporate_text_button, corporate_cta_teaser)
         }
     }
 }

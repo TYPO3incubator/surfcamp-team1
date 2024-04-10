@@ -37,6 +37,13 @@
             <trans-unit id="corporate_text_button.description">
                 <source>text and with button</source>
             </trans-unit>
+            <trans-unit id="corporate_cta_teaser.title">
+                <source>Social Media Teaser</source>
+            </trans-unit>
+            <trans-unit id="corporate_cta_teaser.description">
+                <source>Teaser element with link to external page</source>
+            </trans-unit>
+
         </body>
     </file>
 </xliff>

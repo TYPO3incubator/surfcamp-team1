@@ -31,4 +31,9 @@ tt_content {
     corporate_text_button {
         templateName = TextButton
     }
+
+    corporate_cta_teaser =< lib.contentElement
+    corporate_cta_teaser {
+        templateName = CtaTeaser
+    }
 }

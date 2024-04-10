@@ -72,11 +72,11 @@ ExtensionManagementUtility::addTcaSelectItem(
     'CType',
     [
 
-        'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_text_button.title',
+        'label' => $translation . ':corporate_text_button.title',
         'value' => 'corporate_text_button',
         'icon' => 'content-form',
         'group' => 'common',
-        'description' => 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:corporate_text_button.description',
+        'description' => $translation . ':corporate_text_button.description',
     ],
     'textmedia',
     'after',
@@ -93,12 +93,58 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_text_button'] = [
          ',
     'columnsOverrides' => [
         'subheader' => [
-            'label' => 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:label.link_text',
+            'label' => $translation . ':label.link_text',
         ],
         'bodytext' => [
             'config' => [
                 'enableRichtext' => true,
                 'richtextConfiguration' => 'default',
+            ],
+
+        ],
+    ],
+];
+
+######################################
+#       CTA Teaser              #
+######################################
+
+ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+
+        'label' => $translation . ':corporate_cta_teaser.title',
+        'value' => 'corporate_cta_teaser',
+        'icon' => 'mimetypes-x-content-link',
+        'group' => 'common',
+        'description' => $translation . ':corporate_cta_teaser.description',
+    ],
+    'textmedia',
+    'after',
+);
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['corporate_cta_teaser'] = 'mimetypes-x-content-link';
+$GLOBALS['TCA']['tt_content']['types']['corporate_cta_teaser'] = [
+    'showitem' => '
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+               --palette--;;general,
+              header, image, date, bodytext, header_link, subheader,
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+               --palette--;;hidden,
+               --palette--;;access,
+         ',
+    'columnsOverrides' => [
+        'subheader' => [
+            'label' => $translation . ':label.link_text',
+        ],
+        'header_link' => [
+            'config' => [
+                'allowedTypes' => ['page', 'url', 'record'],
+            ],
+        ],
+        'bodytext' => [
+            'config' => [
+                'enableRichtext' => false,
             ],
 
         ],
