@@ -104,7 +104,9 @@ return [
             ],
         ],
         'images' => [
+            'exclude' => 1,
             'label'  => $translation . '.images',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type'     => 'file',
                 'minitems' => 1,
@@ -113,7 +115,9 @@ return [
             ],
         ],
         'sizes' => [
+            'exclude' => 1,
             'label' => $translation . '.sizes',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_surfcampcorporate_domain_model_product_size',
@@ -127,7 +131,9 @@ return [
             ],
         ],
         'accordion_items' => [
+            'exclude' => 1,
             'label' => $translation . '.accordion_items',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_surfcampcorporate_domain_model_accordion_item',

@@ -72,6 +72,7 @@ return [
         'date' => [
             'exclude' => true,
             'label' => $translation . '.date',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'date',
@@ -79,6 +80,7 @@ return [
             ],
         ],
         'bodytext' => [
+            'exclude' => true,
             'l10n_mode' => 'prefixLangTitle',
             'label' => $translation . '.bodytext',
             'config' => [
@@ -88,7 +90,9 @@ return [
             ],
         ],
         'image' => [
+            'exclude' => true,
             'label'  => $translation . '.image',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type'     => 'file',
                 'minitems' => 1,
@@ -99,6 +103,7 @@ return [
         'link' => [
             'exclude' => true,
             'label' => $translation . '.link',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type' => 'link',
                 'size' => 50,
@@ -108,6 +113,7 @@ return [
         'link_label' => [
             'exclude' => true,
             'label' => $translation . '.link_label',
+            'l10n_mode' => 'exclude',
             'config' => [
                 'type' => 'link',
                 'size' => 50,
