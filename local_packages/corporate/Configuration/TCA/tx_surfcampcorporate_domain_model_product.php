@@ -101,8 +101,8 @@ return [
                 'eval' => 'trim,required',
             ],
         ],
-        'image' => [
-            'label'  => $translation . '.image',
+        'images' => [
+            'label'  => $translation . '.images',
             'config' => [
                 'type'     => 'file',
                 'minitems' => 1,

@@ -59,7 +59,7 @@
             <trans-unit id="tx_surfcampcorporate_domain_model_card_item.bodytext">
                 <source>Text</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.image">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.images">
                 <source>Image</source>
             </trans-unit>
             <trans-unit id="tx_surfcampcorporate_domain_model_card_item.link">
