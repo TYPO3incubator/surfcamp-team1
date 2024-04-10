@@ -15,7 +15,7 @@
             <trans-unit id="tx_surfcampcorporate_domain_model_product.lead">
                 <source><![CDATA[Lead]]></source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_product.image">
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.images">
                 <source><![CDATA[Image]]></source>
             </trans-unit>
             <trans-unit id="tx_surfcampcorporate_domain_model_product.sizes">
@@ -86,7 +86,7 @@
             <trans-unit id="tx_surfcampcorporate_domain_model_card_item.bodytext">
                 <source>Text</source>
             </trans-unit>
-            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.images">
+            <trans-unit id="tx_surfcampcorporate_domain_model_card_item.image">
                 <source>Image</source>
             </trans-unit>
             <trans-unit id="tx_surfcampcorporate_domain_model_card_item.link">

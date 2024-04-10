@@ -24,6 +24,7 @@ return [
             'starttime' => 'starttime',
             'endtime'   => 'endtime',
         ],
+        'hideTable' => true,
         'security' => [
             'ignorePageTypeRestriction' => true,
         ],

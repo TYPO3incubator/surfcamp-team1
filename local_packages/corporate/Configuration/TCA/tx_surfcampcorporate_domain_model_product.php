@@ -36,7 +36,7 @@ return [
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             --palette--;;title,
             lead,
-            image,
+            images,
             sizes,
             accordion_items,
             --div--;' . $translation . '.tabs.taxonomy,
