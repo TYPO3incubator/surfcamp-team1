@@ -34,15 +34,14 @@ return [
         '0' => [
             'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-            --palette--;' . $translation . 'tca.palette.title;title,
+            --palette--;;title,
             lead,
             image,
+            --div--;' . $translation . '.tabs.taxonomy,
+            categories,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
-            --div--;Language,
-            sys_language_uid,
-            l10n_parent,
         ',
         ],
     ],
@@ -106,10 +105,18 @@ return [
             'label'  => $translation . '.image',
             'config' => [
                 'type'     => 'file',
-                'minitems' => 0,
-                'maxitems' => 1,
+                'minitems' => 1,
+                'maxitems' => 9,
                 'allowed'  => 'common-image-types',
             ],
+        ],
+        'categories' => [
+            'config' => [
+                'type' => 'category',
+                'treeConfig' => [
+                    'startingPoints' => '###SITE:corporate.product.categoryRootUid###',
+                ],
+            ]
         ],
     ],
 ];

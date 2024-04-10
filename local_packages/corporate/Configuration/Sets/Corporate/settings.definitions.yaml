@@ -34,3 +34,8 @@ settings:
     description: 'Page who contains the product show plugin'
     type: int
     default: 2
+  corporate.product.categoryRootUid:
+    label: 'Category root uid for products'
+    description: 'Sets the root uid for product categories'
+    type: int
+    default: 1

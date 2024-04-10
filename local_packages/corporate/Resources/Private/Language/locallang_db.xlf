@@ -2,6 +2,7 @@
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="messages" date="2024-03-04T11:00:47Z">
         <body>
+            <!-- product -->
             <trans-unit id="tx_surfcampcorporate_domain_model_product">
                 <source><![CDATA[Product]]></source>
             </trans-unit>
@@ -16,6 +17,9 @@
             </trans-unit>
             <trans-unit id="tx_surfcampcorporate_domain_model_product.image">
                 <source><![CDATA[Image]]></source>
+            </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.tabs.taxonomy">
+                <source>Taxonomy</source>
             </trans-unit>
             <!-- labels -->
             <trans-unit id="label.link_text">

@@ -24,9 +24,9 @@ class Product extends AbstractEntity
     protected $lead = '';
 
     /**
-     * @var \TYPO3\CMS\Extbase\Domain\Model\Category
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\Category>
      */
-    protected $category = null;
+    protected $categories = null;
 
     /**
      * @var \DateTime
@@ -43,19 +43,9 @@ class Product extends AbstractEntity
         return $this->title;
     }
 
-    public function setTitle(string $title): void
-    {
-        $this->title = $title;
-    }
-
-    public function getImage(): FileReference|string
+    public function getImage(): string|FileReference
     {
         return $this->image;
-    }
-
-    public function setImage(FileReference|string $image): void
-    {
-        $this->image = $image;
     }
 
     public function getLead(): string
@@ -63,19 +53,9 @@ class Product extends AbstractEntity
         return $this->lead;
     }
 
-    public function setLead(string $lead): void
+    public function getCategories(): ?\TYPO3\CMS\Extbase\Persistence\ObjectStorage
     {
-        $this->lead = $lead;
-    }
-
-    public function getCategory(): ?\TYPO3\CMS\Extbase\Domain\Model\Category
-    {
-        return $this->category;
-    }
-
-    public function setCategory(?\TYPO3\CMS\Extbase\Domain\Model\Category $category): void
-    {
-        $this->category = $category;
+        return $this->categories;
     }
 
     public function getStarttime(): \DateTime|int
@@ -83,18 +63,8 @@ class Product extends AbstractEntity
         return $this->starttime;
     }
 
-    public function setStarttime(\DateTime|int $starttime): void
-    {
-        $this->starttime = $starttime;
-    }
-
     public function getEndtime(): \DateTime|int
     {
         return $this->endtime;
-    }
-
-    public function setEndtime(\DateTime|int $endtime): void
-    {
-        $this->endtime = $endtime;
     }
 }
