@@ -2,13 +2,13 @@ page = PAGE
 page.10 = PAGEVIEW
 
 page {
+    meta {
+        viewport = 'width=device-width, initial-scale=1'
+    }
     10 {
         paths.100 = EXT:corporate/Resources/Private/Templates/
         variables {
             prods < lib.products
-        }
-        meta {
-            viewport = 'width=device-width, initial-scale=1'
         }
         dataProcessing {
             10 = menu
