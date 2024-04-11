@@ -6,8 +6,8 @@ TCEMAIN.preview {
             uid = tx_corporate_productshow[product]
         }
         additionalGetParameters {
-            tx_news_pi1.controller = Product
-            tx_news_pi1.action = show
+            tx_corporate_productshow.controller = Product
+            tx_corporate_productshow.action = show
         }
     }
 }
