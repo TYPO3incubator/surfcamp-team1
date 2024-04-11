@@ -13,12 +13,19 @@
 
 .base-header--logo{
   position: absolute;
-  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:-30px auto;
   width: 100%;
 }
 
 .base-header--navigation{
   display: none;
+}
+
+#base-header--logo-desktop{
+  transition: 0.2s;
 }
 
 .base-header__spacing{
