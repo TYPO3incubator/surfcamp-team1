@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<!-- TODO: add hero template-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column align-items-end hero-text">
+                        <h1>{data.header}</h1>
+                        <p class="mb-3">{data.bodytext}</p>
+                        <f:render partial="TextButton" arguments="{link:data.header_link, link-text:data.subheader}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <f:media class="hero-media" file="{media.0}" />
+    </div>
+</html>

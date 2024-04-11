@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => true,
+        'debug' => '1',
         'installToolPassword' => '<set in dotenv>',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
@@ -47,7 +47,7 @@ return [
         'cacheHash' => [
             'enforceValidation' => true,
         ],
-        'debug' => true,
+        'debug' => '1',
         'disableNoCacheParameter' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
@@ -105,7 +105,7 @@ return [
             ],
         ],
         'devIPmask' => '*',
-        'displayErrors' => 1,
+        'displayErrors' => '1',
         'encryptionKey' => '<set in dotenv>',
         'exceptionalErrors' => 12290,
         'sitename' => 'Surfcamp Template',

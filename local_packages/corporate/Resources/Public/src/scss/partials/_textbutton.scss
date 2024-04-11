@@ -1,0 +1,11 @@
+.base-button--text {
+  border: $base-border solid $color-primary-100;
+  background-color: $color-primary-100;
+  border-radius: 4px;
+  color: $color-dark;
+
+  &:hover {
+    background-color: $color-primary-20;
+    color: $color-dark;
+  }
+}
