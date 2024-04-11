@@ -16,7 +16,7 @@ return [
         'hideAtCopy'               => true,
         'prependAtCopy'            => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
         'transOrigPointerField'    => 'l10n_parent',
-        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'transOrigDiffSourceField$' => 'l10n_diffsource',
         'languageField'            => 'sys_language_uid',
         'sortby'                   => 'sorting',
         'enablecolumns'            => [
@@ -73,6 +73,8 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default'
             ],
         ],
     ],
