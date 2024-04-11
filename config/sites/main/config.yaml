@@ -29,3 +29,6 @@ languages:
     languageId: 1
 rootPageId: 1
 websiteTitle: ''
+settings:
+    corporate:
+      logo: 'EXT:corporate/Resources/Public/Assets/outdoor_allaround_logo.svg'
