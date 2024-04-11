@@ -2,7 +2,7 @@
   <nav class="base-nav">
     <f:for each="{headerMenu}" as="menuItem">
       <span>
-        <a class="nav--menu-item" href="{menuItem.link}">{menuItem.title}</a>
+        <a class="nav--menu-item {f:if(condition: menuItem.active, then: 'active')}" href="{menuItem.link}">{menuItem.title}</a>
       </span>
     </f:for>
     <select class="{f:if(condition: navClass, then: navClass, else: 'select--on-dark-bg')}">
