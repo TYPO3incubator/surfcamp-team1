@@ -9,7 +9,6 @@
             <f:for each="{products}" as="product" iteration="idIterator">
                 <div class="form-check">
                     <label class="form-check-label" for="{element.uniqueIdentifier}-{idIterator.index}">
-                        <!--                        TODO: change uid with referenceId -->
                         <f:form.checkbox
                                 property="{element.identifier}"
                                 multiple="1"
