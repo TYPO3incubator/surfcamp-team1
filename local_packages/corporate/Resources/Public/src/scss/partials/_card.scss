@@ -1,0 +1,27 @@
+.card-group {
+   display: flex;
+   justify-content: center;
+   gap: $spacing-sm;
+   margin-top: 0.5rem;
+}
+
+.card {
+   position: relative;
+}
+
+.card-body {
+   position: absolute;
+   bottom: 5%;
+   right: 3%;
+}
+
+.card-link {
+   color: var(--color-dark);;
+}
+
+.card-img-top {
+   width: 100%;
+   height: auto;
+   aspect-ratio: 2/3;
+   object-fit: cover;
+}
