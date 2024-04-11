@@ -8,7 +8,7 @@ settings:
     label: 'Logo Url'
     description: 'URL of the image to be used as logo'
     type: string
-    default: 'rgb(0,255,0)'
+    default: 'rgb(210,222,50)'
   corporate.styles.colors.light:
     label: 'Logo Url'
     description: 'URL of the image to be used as logo'
