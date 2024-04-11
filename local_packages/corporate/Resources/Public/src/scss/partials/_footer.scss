@@ -1,12 +1,10 @@
 .base-footer {
   width: 100%;
-  padding-bottom: calc($spacing-lg);
   color: $color-light;
   @media (min-width: 768px) {
     position: inherit;
     bottom: inherit;
     height: auto;
-    padding-bottom: 0;
   }
 }
 
@@ -16,6 +14,11 @@
   min-height: min-content;
   background-color: $color-dark;
   padding: $spacing-md;
+  padding-bottom: 3.5rem;
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+
+  }
 }
 
 .base-footer__nav {
@@ -29,8 +32,11 @@
   align-items: center;
   justify-content: space-between;
   gap: $spacing-md;
-  background-color: $color-dark;
+  background-color: $color-primary-100;
   z-index: 100;
+  .nav--menu-item{
+    color: $color-dark;
+  }
   @media (min-width: 768px) {
     display: none;
   }
