@@ -29,16 +29,20 @@
   color: $color-light;
 }
 
+#base-header--logo-desktop{
+  display: none;
+  color: $color-light;
+  height: 100px;
+}
+
 #base-header--logo-mobile{
   color: $color-light;
-  display: none;
+  display: flex;
   height: 64px;
 }
 
-#base-header--logo-desktop{
-  color: $color-light;
-   height: 100px;
- }
+
+
 .base-header__spacing{
   height: $spacing-lg;
   background-color: $color-light;
@@ -48,5 +52,16 @@
 @media (min-width: 768px) {
   .base-header--navigation{
     display: inherit;
+  }
+  #base-header--logo-desktop{
+    display: flex;
+    color: $color-light;
+    height: 100px;
+  }
+
+  #base-header--logo-mobile{
+    color: $color-light;
+    display: none;
+    height: 64px;
   }
 }
