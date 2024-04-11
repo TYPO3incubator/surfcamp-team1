@@ -15,6 +15,10 @@ form {
     display: none;
   }
 
+  input, textarea {
+    width: 100%;
+  }
+
   .checkbox {
     &.products {
       margin-bottom: $spacing-2xl;
@@ -198,11 +202,11 @@ select {
   border-radius: 4px;
   padding: $spacing-xxs $spacing-sm;
   background-color: transparent;
-  :focus-within{
+
+  :focus-within {
     outline: none;
   }
 }
-
 
 
 .select--on-light-bg {
