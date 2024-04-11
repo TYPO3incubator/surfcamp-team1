@@ -1,24 +1,30 @@
-<script lang="ts">
-  window.onscroll = function() {scrollFunction()};
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:sc="http://typo3.org/ns/Surfcamp/Corporate/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("header-scroll").style.height = "82px";
-    } else {
-      document.getElementById("header-scroll").style.height = "160px";
+<script lang="ts">
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header-scroll").style.height = "82px";
+        } else {
+            document.getElementById("header-scroll").style.height = "160px";
+        }
     }
-  }
 </script>
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-  <header class="base-header" id="header-scroll">
+
+<header class="base-header" id="header-scroll">
     <div class="base-header--logo">
-      <a href="{f:uri.page(pageUid: site.rootPageId)}" class="base-header--logo-image">
-        <f:image src="{settings.corporate.logo}" alt="Logo" />
-      </a>
+        <a href="{f:uri.page(pageUid: site.rootPageId)}" class="base-header--logo-image">
+            <sc:svgEmbed image="{settings.corporate.logo}" />
+        </a>
     </div>
     <span class="base-header--navigation">
       <f:render partial="Nav" arguments="{headerMenu:headerMenu, languageMenu:languageMenu}"/>
     </span>
-  </header>
+</header>
 <div class="base-header__spacing"></div>
 </html>
