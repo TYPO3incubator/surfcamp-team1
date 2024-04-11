@@ -9,13 +9,12 @@
             <f:for each="{products}" as="product" iteration="idIterator">
                 <div class="form-check">
                     <label class="form-check-label" for="{element.uniqueIdentifier}-{idIterator.index}">
-                        <!--                        TODO: change uid with referenceId -->
                         <f:form.checkbox
                                 property="{element.identifier}"
                                 multiple="1"
                                 id="{element.uniqueIdentifier}-{idIterator.index}"
                                 class="{element.properties.elementClassAttribute}"
-                                value="{product.uid}"
+                                value="{product.articleNumber}"
                                 errorClass="{element.properties.elementErrorClassAttribute}"
                                 additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
                         />

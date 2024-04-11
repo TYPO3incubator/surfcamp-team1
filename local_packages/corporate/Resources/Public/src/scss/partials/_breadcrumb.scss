@@ -1,0 +1,14 @@
+.base-breadcrumb {
+  width: 100%;
+  padding-bottom: calc($spacing-lg);
+  color: $color-light;
+  @media (min-width: 768px) {
+    position: inherit;
+    bottom: inherit;
+    height: auto;
+    padding-bottom: 0;
+  }
+}
+
+
+
