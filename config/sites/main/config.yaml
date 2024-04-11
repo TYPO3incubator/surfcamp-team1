@@ -36,3 +36,4 @@ websiteTitle: ''
 settings:
     corporate:
       logo: 'EXT:corporate/Resources/Public/Assets/outdoor_allaround_logo.svg'
+      logoSmall: 'EXT:corporate/Resources/Public/Assets/outdoor_allaround_logo_small.svg'

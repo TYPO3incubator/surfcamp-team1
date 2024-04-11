@@ -17,7 +17,7 @@ class SvgEmbedViewHelper extends AbstractViewHelper
      */
     public function initializeArguments()
     {
-        $this->registerArgument('image', 'string', 'The download file', true);
+        $this->registerArgument('image', 'string', 'Extension path to a file in this format: EXT:corporate/...', true);
     }
 
     /**
