@@ -1,12 +1,20 @@
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./local_packages/corporate/Resources/Public/src/scss/app.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************/
+/* 4 px*/
+/* 8 px*/
+/* 12 px*/
+/* 16 px*/
+/* 24 px*/
+/* 32 px*/
+/* 40 px*/
 * {
   box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  color: rgb(1, 106, 112);
 }
 
 ul,
@@ -20,13 +28,6 @@ a, button {
   cursor: pointer;
 }
 
-/* 4 px*/
-/* 8 px*/
-/* 12 px*/
-/* 16 px*/
-/* 24 px*/
-/* 32 px*/
-/* 40 px*/
 html {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
@@ -65,6 +66,11 @@ p, li, div, span {
 
 a {
   text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: rgb(210, 222, 50);
+  transition: 0.2s;
 }
 
 .product-detail img {
@@ -81,7 +87,7 @@ a {
 }
 
 #header-scroll {
-  height: 160px;
+  height: 10rem;
   transition: 0.2s;
 }
 
@@ -93,7 +99,7 @@ a {
 }
 
 .base-header--logo-image {
-  width: 160px;
+  width: 10rem;
   background-color: rgb(255, 255, 255);
 }
 
@@ -152,6 +158,30 @@ a {
     display: none;
   }
 }
+.hero {
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  bottom: 15%;
+  right: 6%;
+}
+.hero-media {
+  height: auto;
+  width: 100vw;
+}
+
+.base-button--text {
+  border: 1px solid rgb(210, 222, 50);
+  background-color: rgb(210, 222, 50);
+  border-radius: 4px;
+  color: rgb(1, 106, 112);
+}
+.base-button--text:hover {
+  background-color: rgb(246, 248, 214);
+  color: rgb(1, 106, 112);
+}
+
 /*!
  * Bootstrap Grid v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

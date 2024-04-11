@@ -1,0 +1,14 @@
+.hero {
+  position: relative;
+
+  &-text {
+    position: absolute;
+    bottom: 15%;
+    right: 6%;
+  }
+
+  &-media {
+    height: auto;
+    width: 100vw;
+  }
+}

@@ -12,7 +12,24 @@ lib.dynamicContent {
 }
 
 lib.contentElement {
-    templateRootPaths.100 = EXT:corporate/Resources/Private/Content/
+    templateRootPaths.100 = EXT:corporate/Resources/Private/Content/Templates/
+    partialRootPaths.100 = EXT:corporate/Resources/Private/Content/Partials/
+    dataProcessing.10 = files
+    dataProcessing.10 {
+        as = images
+        references.fieldName = image
+        references.table = tt_content
+        sorting = title
+        sorting.direction = descending
+    }
+    dataProcessing.10 = files
+    dataProcessing.10 {
+        as = media
+        references.fieldName = media
+        references.table = tt_content
+        sorting = title
+        sorting.direction = descending
+    }
 }
 
 tt_content {

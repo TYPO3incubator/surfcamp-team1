@@ -9,3 +9,4 @@
 .env
 .DS_Store
 node_modules
+/local_packages/corporate/Resources/Public/Dist/

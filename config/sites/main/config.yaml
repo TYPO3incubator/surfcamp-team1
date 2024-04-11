@@ -1,7 +1,11 @@
 imports:
   - { resource: "../defaults.yaml" }
 
-base: 'https://surfcamp-team1.ddev.site/'
+base: 'https://team1.surfcamp.typo3.com/'
+baseVariants:
+  -
+    base: '%env("DDEV_PRIMARY_URL")%/'
+    condition: 'getenv("IS_DDEV_PROJECT") == "true"'
 dependencies:
   - surfcamp/corporate
 languages:
