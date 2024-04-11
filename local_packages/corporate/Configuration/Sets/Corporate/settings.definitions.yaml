@@ -4,19 +4,24 @@ settings:
     description: 'URL of the image to be used as logo'
     type: string
     default: ''
-  corporate.styles.colors.primary:
+  corporate.logoSmall:
     label: 'Logo Url'
-    description: 'URL of the image to be used as logo'
+    description: 'URL of the image to be used as logo on scroll'
+    type: string
+    default: ''
+  corporate.styles.colors.primary:
+    label: 'Primary color'
+    description: ''
     type: string
     default: 'rgb(210,222,50)'
   corporate.styles.colors.light:
-    label: 'Logo Url'
-    description: 'URL of the image to be used as logo'
+    label: 'Logo Light color'
+    description: ''
     type: string
     default: 'rgb(255,255 ,255)'
   corporate.styles.colors.dark:
-    label: 'Logo Url'
-    description: 'URL of the image to be used as logo'
+    label: 'Dark color'
+    description: ''
     type: string
     default: 'rgb(1,106,112)'
   corporate.social_media.facebook:
