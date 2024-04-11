@@ -1,4 +1,24 @@
 settings:
+  corporate.logo:
+    label: 'Logo Url'
+    description: 'URL of the image to be used as logo'
+    type: string
+    default: ''
+  corporate.styles.colors.primary:
+    label: 'Logo Url'
+    description: 'URL of the image to be used as logo'
+    type: string
+    default: 'rgb(0,255,0)'
+  corporate.styles.colors.light:
+    label: 'Logo Url'
+    description: 'URL of the image to be used as logo'
+    type: string
+    default: 'rgb(255,255 ,255)'
+  corporate.styles.colors.dark:
+    label: 'Logo Url'
+    description: 'URL of the image to be used as logo'
+    type: string
+    default: 'rgb(1,106,112)'
   corporate.social_media.facebook:
     label: 'Facebook Page Link'
     description: 'Link of the Facebook page'
@@ -24,11 +44,6 @@ settings:
     description: 'page uid to display the footer'
     type: int
     default: 1
-  corporate.logo:
-    label: 'Logo Url'
-    description: 'URL of the image to be used as logo'
-    type: string
-    default: ''
   corporate.pages.productShowPid:
     label: 'Product Show Pid'
     description: 'Page who contains the product show plugin'

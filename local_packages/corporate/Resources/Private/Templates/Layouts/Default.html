@@ -1,3 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
+<style>
+    $color-primary-100: {settings.corporate.styles.colors.primary};
+    $color-light: {settings.corporate.styles.colors.light};
+    $color-dark: {settings.corporate.styles.colors.dark};
+</style>
+
+<f:render partial="Header" arguments="{_all}"/>
+<f:render partial="Breadcrumb" arguments="{_all}"/>
+
 <f:render section="Main" />
+
+<f:render partial="Footer" arguments="{_all}"/>
+
