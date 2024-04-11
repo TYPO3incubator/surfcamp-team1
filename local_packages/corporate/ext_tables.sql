@@ -5,6 +5,7 @@ CREATE TABLE tt_content (
 CREATE TABLE tx_surfcampcorporate_domain_model_product (
     title          varchar(255)     DEFAULT ''  NOT NULL,
     slug           varchar(2048)    DEFAULT ''  NOT NULL,
+    article_number varchar(255)     DEFAULT ''  NOT NULL,
     lead           text,
     images         int(11) unsigned DEFAULT '0' NOT NULL,
     documents      int(11) unsigned DEFAULT '0' NOT NULL,

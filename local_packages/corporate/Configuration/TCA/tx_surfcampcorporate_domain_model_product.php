@@ -35,6 +35,7 @@ return [
             'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             --palette--;;title,
+            article_number,
             lead,
             images,
             sizes,
@@ -91,6 +92,14 @@ return [
                 'fallbackCharacter' => '-',
                 'eval'              => 'uniqueInSite',
                 'default'           => '',
+            ],
+        ],
+        'article_number' => [
+            'exclude' => 1,
+            'label'   => $translation . '.article_number',
+            'config'  => [
+                'type' => 'input',
+                'eval' => 'trim,required',
             ],
         ],
         'lead'  => [

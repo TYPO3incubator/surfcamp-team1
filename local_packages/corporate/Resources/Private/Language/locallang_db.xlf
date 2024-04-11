@@ -12,6 +12,9 @@
             <trans-unit id="tx_surfcampcorporate_domain_model_product.slug">
                 <source><![CDATA[Slug]]></source>
             </trans-unit>
+            <trans-unit id="tx_surfcampcorporate_domain_model_product.article_number">
+                <source><![CDATA[Article number]]></source>
+            </trans-unit>
             <trans-unit id="tx_surfcampcorporate_domain_model_product.lead">
                 <source><![CDATA[Lead]]></source>
             </trans-unit>

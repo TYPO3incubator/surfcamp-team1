@@ -22,6 +22,11 @@ class Product extends AbstractEntity
     /**
      * @var string
      */
+    protected $articleNumber = '';
+
+    /**
+     * @var string
+     */
     protected $lead = '';
 
     /**
@@ -68,6 +73,11 @@ class Product extends AbstractEntity
     public function getImages(): \TYPO3\CMS\Extbase\Persistence\ObjectStorage|string
     {
         return $this->images;
+    }
+
+    public function getArticleNumber(): string
+    {
+        return $this->articleNumber;
     }
 
     public function getLead(): string
