@@ -6,7 +6,7 @@
                 <li class="breadcrumb-item">
                     <f:if condition="{Iterator.isLast}">
                         <f:then>{item.title}</f:then>
-                        <f:else><a href="{item.link}" class="link breadcrumb-link">{item.title}</a></f:else>
+                        <f:else><a href="{item.link}" class="link breadcrumb-link">{item.title}</a> <span class="spacer">></span></f:else>
                     </f:if>
 
                 </li>

@@ -5442,12 +5442,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "9d4e1d7d243efc99df6d30462eb040e78d61c154"
+                "reference": "07b1db974fcfd48d7817c98cb75a22e935aa2061"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/9d4e1d7d243efc99df6d30462eb040e78d61c154",
-                "reference": "9d4e1d7d243efc99df6d30462eb040e78d61c154",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/07b1db974fcfd48d7817c98cb75a22e935aa2061",
+                "reference": "07b1db974fcfd48d7817c98cb75a22e935aa2061",
                 "shasum": ""
             },
             "require": {
@@ -5576,7 +5576,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-11T08:31:03+00:00"
+            "time": "2024-04-11T11:53:14+00:00"
         },
         {
             "name": "typo3/cms-dashboard",
