@@ -30,6 +30,15 @@ form {
         column-gap: 1rem;
 
         .form-check {
+          margin-bottom: 0;
+          &:last-of-type{
+            margin-bottom: 0;
+
+          }
+           label{
+             padding-left: 0;
+           }
+
           label {
             display: flex;
             justify-content: center;
