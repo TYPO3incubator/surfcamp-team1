@@ -17,3 +17,24 @@ li {
 a,button{
   cursor: pointer;
 }
+
+select {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: $spacing-xxs $spacing-sm;
+  background-color: transparent;
+}
+
+select:focus-within{
+  outline: none;
+}
+
+.select--on-light-bg {
+  border-color: $color-dark;
+  color: $color-dark;
+}
+
+.select--on-dark-bg {
+  border-color: $color-primary-100;
+  color: $color-light
+}
