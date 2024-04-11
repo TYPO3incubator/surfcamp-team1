@@ -1,0 +1,18 @@
+.base-nav{
+  display: flex;
+  justify-content: space-between;
+  gap: $spacing-md;
+  width: 100%;
+}
+
+.nav--menu-item {
+  text-decoration: none;
+  color: $color-light;
+}
+
+@media (min-width: 768px) {
+  .base-nav {
+    justify-content: flex-end;
+    gap: $spacinf-md;
+  }
+}
