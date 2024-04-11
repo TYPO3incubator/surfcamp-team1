@@ -7,6 +7,9 @@ page {
         variables{
            prods < lib.products
         }
+        meta {
+            viewport = 'width=device-width, initial-scale=1'
+        }
         dataProcessing {
             10 = menu
             10 {
