@@ -59,3 +59,8 @@ settings:
     description: 'Sets the root uid for product categories'
     type: int
     default: 1
+  corporate.product.contactFormPid:
+    label: 'Pid of contact form'
+    description: 'Shows a link to the contact form on the detail page'
+    type: int
+    default: 3
