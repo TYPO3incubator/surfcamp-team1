@@ -7,6 +7,7 @@ var config = defaultConfig;
 
 config.output.path     = Path.resolve(__dirname, './local_packages/corporate/Resources/Public/Dist');
 config.output.filename = '[name].js';
+config.watch = false;
 
 config.plugins[0] = new CleanWebpackPlugin(
     {
