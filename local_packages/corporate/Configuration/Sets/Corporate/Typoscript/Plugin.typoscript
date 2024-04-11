@@ -8,6 +8,12 @@ plugin.tx_form {
 
 plugin.tx_corporate_productteaser {
     settings {
-        showPid = {$corporate.pages.productShowPid}
+        showPid = {$corporate.product.showPid}
+    }
+}
+
+plugin.tx_corporate_productshow {
+    settings {
+        contactFormPid = {$corporate.product.contactFormPid}
     }
 }
