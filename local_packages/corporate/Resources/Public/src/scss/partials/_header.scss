@@ -1,0 +1,38 @@
+.base-header {
+  position: fixed;
+  background-color: $color-dark;
+  width: 100%;
+  padding: $spacing-md;
+}
+
+#header-scroll {
+  height: 160px;
+  transition: 0.2s;
+}
+
+.base-header--logo{
+  position: absolute;
+  margin:0 auto;
+  width: 100%;
+  text-align:center;
+}
+.base-header--logo-image{
+  width: 160px;
+  background-color: $color-light;
+}
+
+.base-header--navigation{
+  display: none;
+}
+
+.base-header__spacing{
+  height: $spacing-lg;
+  background-color: $color-light;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .base-header--navigation{
+    display: inherit;
+  }
+}
