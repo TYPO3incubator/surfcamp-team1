@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<div class="base-breadcrumb">
-    <f:if condition="{breadcrumb -> f:count()} > 1">
+<f:if condition="{breadcrumb -> f:count()} > 1">
+    <div class="base-breadcrumb">
         <ul class="breadcrumb">
             <f:for each="{breadcrumb}" as="item" iteration="Iterator">
                 <li class="breadcrumb-item">
@@ -12,8 +12,8 @@
                 </li>
             </f:for>
         </ul>
-    </f:if>
-</div>
+    </div>
+</f:if>
 </html>
 
 <style lang="scss">
