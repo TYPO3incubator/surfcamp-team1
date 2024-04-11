@@ -4,7 +4,7 @@ $tableName   = 'tx_surfcampcorporate_domain_model_product';
 $translation = 'LLL:EXT:corporate/Resources/Private/Language/locallang_db.xlf:' . $tableName;
 
 return [
-    'ctrl'      => [
+    'ctrl'     => [
         'label'                    => 'title',
         'cacheTags'                => 'product',
         'tstamp'                   => 'tstamp',
@@ -24,13 +24,13 @@ return [
             'starttime' => 'starttime',
             'endtime'   => 'endtime',
         ],
-        'security' => [
+        'security'                 => [
             'ignorePageTypeRestriction' => false,
         ],
         'searchFields'             => 'title,lead',
         'iconfile'                 => 'EXT:corporate/Resources/Public/Icons/TCA/' . $tableName . '.svg',
     ],
-    'types'     => [
+    'types'    => [
         '0' => [
             'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
@@ -48,7 +48,7 @@ return [
         ',
         ],
     ],
-    'palettes'  => [
+    'palettes' => [
         'access'     => [
             'showitem' => '
                 starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
@@ -67,8 +67,8 @@ return [
             ',
         ],
     ],
-    'columns'   => [
-        'title' => [
+    'columns'  => [
+        'title'           => [
             'exclude' => 1,
             'label'   => $translation . '.title',
             'config'  => [
@@ -76,7 +76,7 @@ return [
                 'eval' => 'trim,required',
             ],
         ],
-        'slug'  => [
+        'slug'            => [
             'label'   => $translation . '.slug',
             'exclude' => 1,
             'config'  => [
@@ -94,7 +94,7 @@ return [
                 'default'           => '',
             ],
         ],
-        'article_number' => [
+        'article_number'  => [
             'exclude' => 1,
             'label'   => $translation . '.article_number',
             'config'  => [
@@ -102,7 +102,7 @@ return [
                 'eval' => 'trim,required',
             ],
         ],
-        'lead'  => [
+        'lead'            => [
             'exclude' => 1,
             'label'   => $translation . '.lead',
             'config'  => [
@@ -112,56 +112,58 @@ return [
                 'eval' => 'trim,required',
             ],
         ],
-        'images' => [
-            'exclude' => 1,
-            'label'  => $translation . '.images',
+        'images'          => [
+            'exclude'   => 1,
+            'label'     => $translation . '.images',
             'l10n_mode' => 'exclude',
-            'config' => [
+            'config'    => [
                 'type'     => 'file',
                 'minitems' => 1,
                 'maxitems' => 9,
                 'allowed'  => 'common-image-types',
             ],
         ],
-        'sizes' => [
-            'exclude' => 1,
-            'label' => $translation . '.sizes',
+        'sizes'           => [
+            'exclude'   => 1,
+            'label'     => $translation . '.sizes',
             'l10n_mode' => 'exclude',
-            'config' => [
-                'type' => 'inline',
-                'foreign_table' => 'tx_surfcampcorporate_domain_model_product_size',
-                'foreign_field' => 'parent_id',
+            'config'    => [
+                'type'                => 'inline',
+                'foreign_table'       => 'tx_surfcampcorporate_domain_model_product_size',
+                'foreign_field'       => 'parent_id',
                 'foreign_table_field' => 'tablenames',
-                'appearance' => [
-                    'showSynchronizationLink' => true,
-                    'showAllLocalizationLink' => true,
+                'foreign_sortby'      => 'sorting',
+                'appearance'          => [
+                    'showSynchronizationLink'         => true,
+                    'showAllLocalizationLink'         => true,
                     'showPossibleLocalizationRecords' => true,
                 ],
             ],
         ],
         'accordion_items' => [
-            'exclude' => 1,
-            'label' => $translation . '.accordion_items',
+            'exclude'   => 1,
+            'label'     => $translation . '.accordion_items',
             'l10n_mode' => 'exclude',
-            'config' => [
-                'type' => 'inline',
-                'foreign_table' => 'tx_surfcampcorporate_domain_model_accordion_item',
-                'foreign_field' => 'parent_id',
+            'config'    => [
+                'type'                => 'inline',
+                'foreign_table'       => 'tx_surfcampcorporate_domain_model_accordion_item',
+                'foreign_field'       => 'parent_id',
                 'foreign_table_field' => 'tablenames',
-                'appearance' => [
-                    'showSynchronizationLink' => true,
-                    'showAllLocalizationLink' => true,
+                'foreign_sortby'      => 'sorting',
+                'appearance'          => [
+                    'showSynchronizationLink'         => true,
+                    'showAllLocalizationLink'         => true,
                     'showPossibleLocalizationRecords' => true,
                 ],
             ],
         ],
-        'categories' => [
+        'categories'      => [
             'config' => [
-                'type' => 'category',
+                'type'       => 'category',
                 'treeConfig' => [
                     'startingPoints' => '###SITE:corporate.product.categoryRootUid###',
                 ],
-            ]
+            ],
         ],
     ],
 ];
