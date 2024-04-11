@@ -1,37 +1,20 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <footer class="base-footer">
+  <div class="base-footer__content">
+    <div>
+      <h3> Outdoor Allround </h3>
+      <p> Av. del Istmo, 6</p>
+      <p> 35627 La Pared, Las Palmas</p>
+      <a href="{f:uri.page(pageUid: site.rootPageId)}">legals</a>
+    </div>
+    <div>
+      <a href="{f:uri.page(pageUid: site.rootPageId)}">Career</a>
+    </div>
+  </div>
   <span class="base-footer__nav">
     <f:render partial="Nav" arguments="{headerMenu:headerMenu, languageMenu:languageMenu}"/>
   </span>
 </footer>
 </html>
 
-<style lang="scss">
-  .base-footer {
-    margin-top: auto;
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(1,106,112);
-    width: 100%;
-    height: 72px;
-    padding: 16px;
-  }
 
-  .base-footer__nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  @media (min-width: 768px ) {
-    .base-footer {
-      position: inherit;
-      bottom: inherit;
-      height: auto;
-    }
-    .base-footer__nav{
-      display:none;
-    }
-  }
-</style>
