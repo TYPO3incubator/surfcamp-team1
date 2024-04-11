@@ -1,7 +1,80 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-TODO PRODUCT SHOW
-<f:debug>{product}</f:debug>
-<h1>{product.title}</h1>
+<section class="product-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <f:if condition="{product.images}">
+                    <div id="productDetailCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <f:for each="{product.images}" as="slide" iteration="iterator" >
+                                <button type="button" data-bs-target="#productDetailCarousel" data-bs-slide-to="{iterator.index}" class="{f:if(condition:iterator.isFirst, then: 'active')}" aria-current="true" aria-label="Slide"></button>
+                            </f:for>
+                        </div>
+                        <div class="carousel-inner">
+                            <f:for each="{product.images}" as="image" iteration="iterator" >
+                                <div class="carousel-item{f:if(condition:iterator.isFirst, then: ' active')}">
+                                    <f:media file="{image}" width="400" height="375" />
+                                </div>
+                            </f:for>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productDetailCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productDetailCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                </f:if>
+            </div>
+            <div class="col-12 col-lg-5">
+                <f:if condition="{product.categories}">
+                    <f:for each="{product.categories}" as="category">
+                        <h3 class="product-detail--category">
+                            {category.title}
+                        </h3>
+                    </f:for>
+                </f:if>
+                <f:if condition="{product.title}">
+                    <h1 class="product-detail--title large">
+                        {product.title}
+                    </h1>
+                </f:if>
+                <f:if condition="{product.sizes}">
+                    <div class="product-detail--sizes">
+                        <f:for each="{product.sizes}" as="size" iteration="iterator">
+                            <a class="{f:if(condition:iterator.isFirst, then: 'active')}" id="i{iterator.index}">{size.title}</a>
+                        </f:for>
+                    </div>
+                    <div class="product-detail--properties">
+                        <f:for each="{product.sizes}" as="size" iteration="iterator">
+                            <div class="{f:if(condition:iterator.isFirst, then: 'active')}" id="i{iterator.index}">{size.bodytext -> f:format.html()}</div>
+                        </f:for>
+                    </div>
+                </f:if>
+
+                <f:if condition="{product.accordionItems}">
+                    <div class="accordion accordion-flush" id="productDetailAccordion">
+                        <f:for each="{product.accordionItems}" as="item" iteration="iterator">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{iterator.index}" aria-expanded="false" aria-controls="flush-collapse{iterator.index}">
+                                        {item.header}
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse{iterator.index}" class="accordion-collapse collapse" data-bs-parent="#productDetailAccordion">
+                                    <div class="accordion-body">{item.bodytext}</div>
+                                </div>
+                            </div>
+                        </f:for>
+                    </div>
+                </f:if>
+
+                </div>
+            </div>
+        </div>
+</section>
 
 </html>
