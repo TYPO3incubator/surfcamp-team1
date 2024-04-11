@@ -7,7 +7,7 @@
 }
 
 #header-scroll {
-  height: 10rem;
+  height: 8rem;
   transition: 0.2s;
 }
 
@@ -25,10 +25,20 @@
   display: none;
 }
 
-#base-header--logo-desktop{
-  transition: 0.2s;
+.base-header--logo {
+  color: $color-light;
 }
 
+#base-header--logo-mobile{
+  color: $color-light;
+  display: none;
+  height: 64px;
+}
+
+#base-header--logo-desktop{
+  color: $color-light;
+   height: 100px;
+ }
 .base-header__spacing{
   height: $spacing-lg;
   background-color: $color-light;
