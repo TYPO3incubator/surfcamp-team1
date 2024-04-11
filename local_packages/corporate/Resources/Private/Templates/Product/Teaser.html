@@ -1,19 +1,25 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:if condition="{products}">
-    <div class="card-group">
-        <f:for as="product" each="{products}">
-            <div class="card">
-                <f:image image="{product.images.0}" width="200c" height="200c" class="card-img-top" />
-                <div class="card-body">
-                    <h5 class="card-title">{product.title}</h5>
-                    <p class="card-text">{product.lead}</p>
-                    <f:link.action class="card-link" action="show" pageUid="{settings.showPid}" arguments="{product: product}">
-                        <f:translate key="product.teaser.link_label" />
-                    </f:link.action>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-group">
+                    <f:for as="product" each="{products}">
+                        <div class="card">
+                            <f:image image="{product.images.0}" width="200c" height="200c" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">{product.title}</h5>
+                                <p class="card-text">{product.lead}</p>
+                                <f:link.action class="card-link" action="show" pageUid="{settings.showPid}" arguments="{product: product}">
+                                    <f:translate key="product.teaser.link_label" />
+                                </f:link.action>
+                            </div>
+                        </div>
+                    </f:for>
                 </div>
             </div>
-        </f:for>
+        </div>
     </div>
 </f:if>
 
