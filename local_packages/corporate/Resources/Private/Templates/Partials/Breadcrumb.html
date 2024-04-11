@@ -1,17 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{breadcrumb -> f:count()} > 1">
     <div class="base-breadcrumb">
-        <ul class="breadcrumb">
-            <f:for each="{breadcrumb}" as="item" iteration="Iterator">
-                <li class="breadcrumb-item">
-                    <f:if condition="{Iterator.isLast}">
-                        <f:then>{item.title}</f:then>
-                        <f:else><a href="{item.link}" class="link breadcrumb-link">{item.title}</a> <span class="spacer">></span></f:else>
-                    </f:if>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumb col-12">
+                    <f:for each="{breadcrumb}" as="item" iteration="Iterator">
+                        <li class="breadcrumb-item">
+                            <f:if condition="{Iterator.isLast}">
+                                <f:then>{item.title}</f:then>
+                                <f:else><a href="{item.link}" class="link breadcrumb-link">{item.title}</a> <span class="spacer">></span></f:else>
+                            </f:if>
 
-                </li>
-            </f:for>
-        </ul>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
     </div>
 </f:if>
 </html>
