@@ -1,7 +1,11 @@
-TCEMAIN.table.pages {
-    disablePrependAtCopy = 1
-}
-
-TCEMAIN.table.tx_surfcampcorporate_domain_model_product {
-    disablePrependAtCopy = 1
+TCEMAIN.table {
+    tt_content {
+        disablePrependAtCopy = 1
+    }
+    tx_surfcampcorporate_domain_model_product {
+        disablePrependAtCopy = 1
+    }
+    pages {
+        disablePrependAtCopy = 1
+    }
 }
