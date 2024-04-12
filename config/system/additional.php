@@ -51,3 +51,5 @@ if((string)\TYPO3\CMS\Core\Core\Environment::getContext() === 'Development'){
     $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = true;
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = 1;
 }
+
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fal']['processors']['DeferredBackendImageProcessor'] = [];
