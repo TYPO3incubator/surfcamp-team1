@@ -1,11 +1,14 @@
 TCEMAIN.table {
     tt_content {
         disablePrependAtCopy = 1
+        disablePrependAtCopy = 1
     }
     tx_surfcampcorporate_domain_model_product {
         disablePrependAtCopy = 1
+        disablePrependAtCopy = 1
     }
     pages {
+        disablePrependAtCopy = 1
         disablePrependAtCopy = 1
     }
 }
