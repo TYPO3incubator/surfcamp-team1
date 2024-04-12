@@ -8,8 +8,10 @@
 }
 
 .nav--menu-item {
+  font-size: 1.2em;
   text-decoration: none;
   color: $color-light;
+  border-bottom: 1px solid transparent;
 }
 
 @media (min-width: 768px) {
