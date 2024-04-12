@@ -1,20 +1,69 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:sc="http://typo3.org/ns/Surfcamp/Corporate/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 <footer class="base-footer">
-  <div class="base-footer__content">
-    <div>
-      <h3> Outdoor Allround </h3>
-      <p> Av. del Istmo, 6</p>
-      <p> 35627 La Pared, Las Palmas</p>
-      <a href="{f:uri.page(pageUid: site.rootPageId)}">legals</a>
+    <div class="base-footer__content container">
+        <div class="row">
+            <div class="col-12">
+                <a href="{f:uri.page(pageUid: site.rootPageId)}" class="footer-logo">
+                    <sc:svgEmbed image="{settings.corporate.logo}"/>
+                </a>
+            </div>
+        </div>
+        <div class="menus row">
+            <div class="footer-left col-md-6 col-lg-4">
+
+                <f:if condition="{settings.corporate.content.information.text}">
+                    <p>{settings.corporate.content.information.text}</p>
+                </f:if>
+                <f:if condition="{settings.corporate.content.information.email}">
+                    <a href="mailto:{settings.corporate.content.information.email}">{settings.corporate.content.information.email}</a>
+                </f:if>
+                <f:if condition="{settings.corporate.content.information.phone}">
+                    <a href="tel:{settings.corporate.content.information.phone}">{settings.corporate.content.information.phone}</a>
+                </f:if>
+                <f:if condition="{settings.corporate.content.information.address}">
+                    <p>{settings.corporate.content.information.address}</p>
+                </f:if>
+
+            </div>
+            <div class="footer-center col-md-6 col-lg-4">
+                <ul class="footer-menu">
+                    <f:for as="menuItem" each="{headerMenu}">
+                        <li><a href="{menuItem.link}">{menuItem.title}</a></li>
+                    </f:for>
+                </ul>
+                <ul class="footer-menu">
+                    <f:for as="menuItem" each="{FooterMenu}">
+                        <li><a href="{menuItem.link}">{menuItem.title}</a></li>
+                    </f:for>
+                </ul>
+            </div>
+            <div class="footer-right col-md-6 col-lg-4">
+                <h3 class="section-headdeline">{settings.corporate.social_media.text}</h3>
+                <ul class="social-icons">
+                    <f:for as="social" each="{settings.corporate.social_media.links}" key="icon">
+                        <f:if condition="{social}">
+                            <li><a href="{social}" class="social-media-link">
+                                <sc:svgEmbed image="EXT:corporate/Resources/Public/Icons/SocialMedia/{icon}.svg"/>
+                            </a></li>
+                        </f:if>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+        <f:if condition="{settings.corporate.content.footer.trademark}">
+            <div class="row">
+                <div class="footer-bottom col-12">
+                    <p>&copy; {settings.corporate.content.footer.trademark}</p>
+                </div>
+            </div>
+        </f:if>
     </div>
-    <div>
-      <a href="{f:uri.page(pageUid: site.rootPageId)}">Career</a>
-    </div>
-  </div>
-  <span class="base-footer__nav">
-    <f:render partial="Nav" arguments="{headerMenu:headerMenu, languageMenu:languageMenu, navClass:'select--on-light-bg'}"/>
+
+    <span class="base-footer__nav">
+    <f:render partial="Nav"
+              arguments="{headerMenu:headerMenu, languageMenu:languageMenu, navClass:'select--on-light-bg'}"/>
   </span>
 </footer>
 </html>
-
-

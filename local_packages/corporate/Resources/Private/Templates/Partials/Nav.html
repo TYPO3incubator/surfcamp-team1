@@ -7,7 +7,7 @@
     </f:for>
     <select class="{f:if(condition: navClass, then: navClass, else: 'select--on-dark-bg')}">
       <f:for each="{languageMenu}" as="lang">
-        <option value="{lang.link}">
+        <option value="{lang.link}" {f:if(condition: lang.active, then:'selected')}>
           {lang.navigationTitle}
         </option>
       </f:for>

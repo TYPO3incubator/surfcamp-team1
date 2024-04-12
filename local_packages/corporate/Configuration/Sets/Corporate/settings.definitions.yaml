@@ -24,24 +24,34 @@ settings:
     description: ''
     type: string
     default: 'rgb(1,106,112)'
-  corporate.social_media.facebook:
+  corporate.social_media.text:
+    label: 'Social media Text'
+    description: 'Social media Text'
+    type: string
+    default: ''
+  corporate.social_media.links.facebook:
     label: 'Facebook Page Link'
     description: 'Link of the Facebook page'
     type: string
     default: ''
-  corporate.social_media.instagram:
+  corporate.social_media.links.instagram:
     label: 'Instagram Page Link'
     description: 'Link of the Instagram page'
     type: string
     default: ''
-  corporate.social_media.x:
+  corporate.social_media.links.x:
     label: 'X Page Link'
     description: 'Link of the X page'
     type: string
     default: ''
-  corporate.social_media.tiktok:
+  corporate.social_media.links.tiktok:
     label: 'TikTok Page Link'
     description: 'Link of the TikTok page'
+    type: string
+    default: ''
+  corporate.social_media.links.linkedin:
+    label: 'Linkedin Page Link'
+    description: 'Link of the Linkedin page'
     type: string
     default: ''
   corporate.pages.footerPid:
@@ -64,3 +74,28 @@ settings:
     description: 'Shows a link to the contact form on the detail page'
     type: int
     default: 3
+  corporate.content.footer.trademark:
+    label: 'Trademark Text'
+    description: 'trademark text that will appear on bottom of the pages'
+    type: string
+    default: ''
+  corporate.content.information.text:
+    label: 'Information Text'
+    description: 'text that will appear on bottom of the footer'
+    type: string
+    default: ''
+  corporate.content.information.email:
+    label: 'Email Address'
+    description: 'Main Contact Email address'
+    type: string
+    default: ''
+  corporate.content.information.phone:
+    label: 'Phone Number'
+    description: 'Main Contact Phone Number'
+    type: string
+    default: ''
+  corporate.content.information.address:
+    label: 'Corporate Headquarter'
+    description: 'Headquarter Address'
+    type: string
+    default: ''
