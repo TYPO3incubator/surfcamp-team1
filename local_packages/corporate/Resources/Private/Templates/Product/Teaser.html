@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="card-group">
                     <f:for as="product" each="{products}">
-                        <div class="card col-4">
+                        <div class="card col-6 col-lg-4">
                             <f:image image="{product.images.0}" class="card-img-top" />
                             <div class="card-body">
                                 <f:link.action class="base-button--text card-link" action="show" pageUid="{settings.showPid}" arguments="{product: product}">
