@@ -3,18 +3,39 @@
 <section class="product-detail">
     <div class="container">
         <div class="row">
+
+            <!--Product Image-->
             <div class="col-12 col-lg-7">
                 <f:if condition="{product.images}">
-                    <div id="productDetailCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div
+                      id="productDetailCarousel"
+                      class="carousel slide"
+                      data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <f:for each="{product.images}" as="slide" iteration="iterator" >
-                                <button type="button" data-bs-target="#productDetailCarousel" data-bs-slide-to="{iterator.index}" class="{f:if(condition:iterator.isFirst, then: 'active')}" aria-current="true" aria-label="Slide"></button>
+                            <f:for
+                              each="{product.images}"
+                              as="slide"
+                              iteration="iterator" >
+                                <button
+                                  type="button"
+                                  data-bs-target="#productDetailCarousel"
+                                  data-bs-slide-to="{iterator.index}"
+                                  class="{f:if(condition:iterator.isFirst, then: 'active')}"
+                                  aria-current="true"
+                                  aria-label="Slide">
+                                </button>
                             </f:for>
                         </div>
                         <div class="carousel-inner">
-                            <f:for each="{product.images}" as="image" iteration="iterator" >
+                            <f:for
+                              each="{product.images}"
+                              as="image"
+                              iteration="iterator" >
                                 <div class="carousel-item{f:if(condition:iterator.isFirst, then: ' active')}">
-                                    <f:media file="{image}" width="400" height="375" />
+                                    <f:media
+                                      file="{image}"
+                                      width="400"
+                                      height="375" />
                                 </div>
                             </f:for>
                         </div>
@@ -29,6 +50,8 @@
                     </div>
                 </f:if>
             </div>
+
+            <!--Product Details-->
             <div class="col-12 col-lg-5">
                 <f:if condition="{product.categories}">
                     <f:for each="{product.categories}" as="category">
@@ -45,12 +68,20 @@
                 <f:if condition="{product.sizes}">
                     <div class="product-detail--sizes">
                         <f:for each="{product.sizes}" as="size" iteration="iterator">
-                            <a class="{f:if(condition:iterator.isFirst, then: 'active')}" id="i{iterator.index}">{size.title}</a>
+                            <a
+                              class="{f:if(condition:iterator.isFirst, then: 'active')}"
+                              id="i{iterator.index}">
+                                {size.title}
+                            </a>
                         </f:for>
                     </div>
                     <div class="product-detail--properties">
                         <f:for each="{product.sizes}" as="size" iteration="iterator">
-                            <div class="{f:if(condition:iterator.isFirst, then: 'active')}" id="i{iterator.index}">{size.bodytext -> f:format.html()}</div>
+                            <div
+                              class="{f:if(condition:iterator.isFirst, then: 'active')}"
+                              id="i{iterator.index}">
+                                {size.bodytext -> f:format.html()}
+                            </div>
                         </f:for>
                     </div>
                 </f:if>
@@ -60,12 +91,16 @@
                         <f:for each="{product.accordionItems}" as="item" iteration="iterator">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{iterator.index}" aria-expanded="false" aria-controls="flush-collapse{iterator.index}">
+                                    <button class="accordion-button collapsed test" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{iterator.index}" aria-expanded="false" aria-controls="flush-collapse{iterator.index}">
                                         {item.header}
                                     </button>
                                 </h2>
                                 <div id="flush-collapse{iterator.index}" class="accordion-collapse collapse" data-bs-parent="#productDetailAccordion">
-                                    <div class="accordion-body">{item.bodytext}</div>
+                                    <div class="accordion-body">
+                                        <f:format.html>
+                                            {item.bodytext}
+                                        </f:format.html>
+                                    </div>
                                 </div>
                             </div>
                         </f:for>
