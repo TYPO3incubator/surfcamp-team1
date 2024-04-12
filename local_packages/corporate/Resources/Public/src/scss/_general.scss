@@ -9,10 +9,14 @@ body, h1, h2, h3, h4, h5, h6, p {
   color: $color-dark;
 }
 
+h2, h3 {
+  margin-bottom: 1.5rem !important;
+}
+
 ul,
 li {
   margin: 0;
-  padding: 0 0 $spacing-xs 0;
+  padding-bottom: $spacing-xs;
 }
 
 a, button {
