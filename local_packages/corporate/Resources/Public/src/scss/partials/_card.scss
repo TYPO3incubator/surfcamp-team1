@@ -19,6 +19,14 @@
    bottom: 0;
    right: 0;
    width: 100%;
+
+   .base-button--text{
+      margin: 1rem;
+      @include md-screen() {
+         margin: 1.5rem;
+      }
+   }
+
 }
 
 .card-link {
