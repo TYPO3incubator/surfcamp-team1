@@ -2,3 +2,7 @@ $accordion-padding-y: 0.5rem;
 $accordion-padding-x: 0rem;
 $accordion-body-padding-y: 1.5rem;
 $accordion-body-padding-x: 0.75rem;
+
+.accordion-body li {
+  padding-left: 0;
+}
