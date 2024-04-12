@@ -4,6 +4,9 @@
   border-radius: 4px;
   color: $color-dark;
   padding: 0.5rem;
+  display: block;
+  margin: 1rem;
+  text-align: center;
 
   &:hover {
     background-color: $color-primary-20;
