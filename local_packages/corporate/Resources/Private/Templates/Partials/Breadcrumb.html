@@ -8,7 +8,11 @@
                         <li class="breadcrumb-item">
                             <f:if condition="{Iterator.isLast}">
                                 <f:then>{item.title}</f:then>
-                                <f:else><a href="{item.link}" class="link breadcrumb-link">{item.title}</a> <span class="spacer">></span></f:else>
+                                <f:else>
+                                    <a href="{item.link}" class="link breadcrumb-link">
+                                        {item.title}
+                                    </a>
+                                </f:else>
                             </f:if>
 
                         </li>
@@ -19,9 +23,3 @@
     </div>
 </f:if>
 </html>
-
-<style lang="scss">
-    .base-breadcrumb {
-        padding-top: calc(160px + 24px);
-    }
-</style>
