@@ -1,0 +1,16 @@
+.ce-text-button {
+  padding: 3.5rem 0;
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacing-xl;
+  }
+  .base-button--text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
