@@ -1,3 +1,7 @@
 TCEMAIN.table.pages {
     disablePrependAtCopy = 1
 }
+
+TCEMAIN.table.tx_surfcampcorporate_domain_model_product {
+    disablePrependAtCopy = 1
+}
