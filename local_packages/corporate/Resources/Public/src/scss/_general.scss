@@ -26,3 +26,10 @@ body{
 footer{
   margin-top: auto;
 }
+
+*{
+  &:focus{
+    outline: none !important;
+    box-shadow: none  !important;
+  }
+}

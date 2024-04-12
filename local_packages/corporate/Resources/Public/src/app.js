@@ -6,8 +6,6 @@ import 'bootstrap/js/dist/carousel';
 import 'bootstrap/js/dist/collapse';
 
 document.addEventListener("DOMContentLoaded", function () {
-    //general
-    general()
 
     //example
     const exampleElements = document.querySelectorAll(".exampleSection");
@@ -19,4 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     for (const sizesElement of sizesElements) {
         sizes(sizesElement);
     }
+    general()
+
 });
