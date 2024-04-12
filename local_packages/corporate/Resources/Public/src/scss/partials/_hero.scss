@@ -2,14 +2,40 @@
   position: relative;
 
   &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     position: absolute;
     bottom: 15%;
     right: 6%;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &-media {
     height: 100dvh;
     width: 100vw;
     object-fit: cover;
+  }
+
+  &-scroll a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 40px;
+    background: $color-light;
+    color: $color-dark;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      width: 25%;
+    }
   }
 }

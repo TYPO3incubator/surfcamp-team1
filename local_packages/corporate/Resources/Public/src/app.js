@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (const sizesElement of sizesElements) {
         sizes(sizesElement);
     }
-    general()
 
+    //general
+    general()
 });
