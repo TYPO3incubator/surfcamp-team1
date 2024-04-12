@@ -8,6 +8,10 @@
 .card {
    position: relative;
    padding: 0.25rem;
+
+   @media (min-width: 768px) {
+      padding: 0.5rem;
+   }
 }
 
 .card-body {
