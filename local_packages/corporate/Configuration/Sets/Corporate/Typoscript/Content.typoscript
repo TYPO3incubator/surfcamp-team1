@@ -21,6 +21,8 @@ lib.contentElement {
         references.table = tt_content
         sorting = title
         sorting.direction = descending
+        if.isTrue.field = image
+
     }
     dataProcessing.10 = files
     dataProcessing.10 {
@@ -29,6 +31,8 @@ lib.contentElement {
         references.table = tt_content
         sorting = title
         sorting.direction = descending
+        if.isTrue.field = media
+
     }
 }
 
@@ -46,5 +50,20 @@ tt_content {
     corporate_card =< lib.contentElement
     corporate_card {
         templateName = Card
+        dataProcessing.30 = database-query
+        dataProcessing.30 {
+            if.isTrue.field = card_items
+            table = tx_surfcampcorporate_domain_model_card_item
+            orderBy = sorting
+            pidInList.field = pid
+            as = cardItems
+            // recursively process the images in the records with the FilesProcessor
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = image
+                }
+            }
+        }
     }
 }
