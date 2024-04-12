@@ -96,6 +96,7 @@ return [
         ],
         'article_number'  => [
             'exclude' => 1,
+            'l10n_mode' => 'exclude',
             'label'   => $translation . '.article_number',
             'config'  => [
                 'type' => 'input',
