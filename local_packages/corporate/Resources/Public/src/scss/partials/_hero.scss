@@ -8,16 +8,31 @@
     position: absolute;
     bottom: 15%;
     right: 6%;
-
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: right;
     p {
       margin-bottom: 1.5rem;
+    }
+    @include sm-max-screen(){
+      left: 6%;
+      text-align: center;
+      .base-button{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 
   &-media {
-    height: 100dvh;
+    height: calc(100dvh - 10.75rem);
     width: 100vw;
     object-fit: cover;
+    @media (min-width: 768px) {
+      height: 100dvh;
+    }
   }
 
   &-scroll a {
@@ -36,6 +51,11 @@
 
     @media (min-width: 768px) {
       width: 25%;
+    }
+  }
+  @include md-max-screen(){
+    &-text {
+      padding: 2rem;
     }
   }
 }

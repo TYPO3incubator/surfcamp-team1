@@ -3,8 +3,9 @@
   .carousel{
     img{
       width: 100%;
-      max-height: 31.25rem;
       object-fit: cover;
+      height: auto;
+      aspect-ratio: 1/1;
     }
   }
   h3.product-detail--category{
@@ -84,7 +85,7 @@
   }
 }
 
-@include lg-max-screen(){
+@include md-max-screen(){
   .product-detail{
     padding: 1.5rem 0 1.5rem;
     .row{

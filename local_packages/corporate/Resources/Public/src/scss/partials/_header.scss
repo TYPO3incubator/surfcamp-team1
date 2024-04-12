@@ -4,10 +4,13 @@
   width: 100%;
   padding: $spacing-md;
   z-index: 1;
+  height: 8rem;
+  html.header-scroll & {
+    height: 82px;
+  }
 }
 
 #header-scroll {
-  height: 8rem;
   transition: 0.2s;
 }
 
@@ -29,22 +32,26 @@
   color: $color-light;
 }
 
-#base-header--logo-desktop{
-  display: none;
+#base-header--logo-default{
+  display: flex;
   color: $color-light;
   height: 100px;
   width: 200px;
+  html.header-scroll & {
+    display: none;
+  }
 }
 
-#base-header--logo-mobile{
+#base-header--logo-small{
   color: $color-light;
-  display: flex;
+  display: none;
   justify-content: center;
   height: 64px;
   width: 160px;
+  html.header-scroll & {
+    display: flex;
+  }
 }
-
-
 
 .base-header__spacing{
   height: 8rem;
@@ -59,15 +66,21 @@
   .base-header--navigation{
     display: inherit;
   }
-  #base-header--logo-desktop{
+  #base-header--logo-default{
     display: flex;
     color: $color-light;
     height: 100px;
+    html.header-scroll & {
+      display: none;
+    }
   }
 
-  #base-header--logo-mobile{
+  #base-header--logo-small{
     color: $color-light;
     display: none;
     height: 64px;
+    html.header-scroll & {
+      display: flex;
+    }
   }
 }
