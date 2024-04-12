@@ -18,6 +18,9 @@
     height: calc(100dvh - 10.75rem);
     width: 100vw;
     object-fit: cover;
+    @media (min-width: 768px) {
+      height: 100dvh;
+    }
   }
 
   &-scroll a {
