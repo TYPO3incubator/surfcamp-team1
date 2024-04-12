@@ -1,4 +1,3 @@
-import example from "./js/example";
 import general from "./js/general";
 import sizes from "./js/sizes";
 import nav from "./js/nav";
