@@ -2,18 +2,17 @@
       xmlns:sc="http://typo3.org/ns/Surfcamp/Corporate/ViewHelpers"
       data-namespace-typo3-fluid="true">
 <header class="base-header" id="header-scroll">
-    <span class="base-header--navigation">
-      <f:render partial="Nav" arguments="{headerMenu:headerMenu, languageMenu:languageMenu}"/>
-    </span>
-    <div class="base-header--logo">
-        <a href="{f:uri.page(pageUid: site.rootPageId)}">
-            <span id="base-header--logo-default">
-                <sc:svgEmbed image="{settings.corporate.logo}"/>
-            </span>
-            <span id="base-header--logo-small">
-                <sc:svgEmbed image="{settings.corporate.logoSmall}"/>
-            </span>
-        </a>
+    <div class="container">
+        <span class="base-header--navigation">
+          <f:render partial="Nav" arguments="{headerMenu:headerMenu, languageMenu:languageMenu}"/>
+        </span>
+        <div class="base-header--logo">
+            <a href="{f:uri.page(pageUid: site.rootPageId)}">
+                <span id="base-header--logo-default">
+                    <sc:svgEmbed image="{settings.corporate.logo}"/>
+                </span>
+            </a>
+        </div>
     </div>
 </header>
 <div class="base-header__spacing"></div>
