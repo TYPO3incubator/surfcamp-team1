@@ -15,11 +15,13 @@
     p {
       margin-bottom: 1.5rem;
     }
+    .base-button{
+      display: flex;
+    }
     @include sm-max-screen(){
       left: 6%;
       text-align: center;
       .base-button{
-        display: flex;
         width: 100%;
         justify-content: center;
       }
@@ -49,7 +51,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @include md-screen() {
       width: 25%;
     }
   }
