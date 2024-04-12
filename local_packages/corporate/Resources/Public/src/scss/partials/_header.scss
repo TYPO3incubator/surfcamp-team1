@@ -8,6 +8,13 @@
   html.header-scroll & {
     height: 82px;
   }
+  @include md-screen(){
+    .base-header--logo{
+      position: unset;
+      justify-content: start;
+      transform: unset;
+    }
+  }
 }
 
 #header-scroll {
@@ -30,6 +37,14 @@
 
 .base-header--logo {
   color: $color-light;
+  transition: all 0.3s ease;
+
+}
+html.header-scroll {
+  .base-header--logo{
+    transition: all 0.3s ease;
+    transform: scale(0.8) translate(-11%, -28px);
+  }
 }
 
 #base-header--logo-default{
@@ -38,7 +53,13 @@
   height: 100px;
   width: 200px;
   html.header-scroll & {
-    display: none;
+    svg{
+      transition: all 0.3s ease-out;
+    }
+    svg > path:nth-child(2){
+      opacity: 0;
+      transition: all 0.3s ease-out;
+    }
   }
 }
 
@@ -48,9 +69,6 @@
   justify-content: center;
   height: 64px;
   width: 160px;
-  html.header-scroll & {
-    display: flex;
-  }
 }
 
 .base-header__spacing{
@@ -58,8 +76,14 @@
   background-color: $color-light;
   width: 100%;
 }
-
-@media (min-width: 768px) {
+@include md-max-screen(){
+  html.header-scroll {
+    .base-header--logo{
+      transform: scale(.8) translate(-33%, -21px);
+    }
+  }
+}
+@include md-screen(){
   .base-header--logo {
     margin:-30px auto;
   }
@@ -70,17 +94,5 @@
     display: flex;
     color: $color-light;
     height: 100px;
-    html.header-scroll & {
-      display: none;
-    }
-  }
-
-  #base-header--logo-small{
-    color: $color-light;
-    display: none;
-    height: 64px;
-    html.header-scroll & {
-      display: flex;
-    }
   }
 }
