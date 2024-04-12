@@ -5,6 +5,7 @@ page {
     meta {
         viewport = 'width=device-width, initial-scale=1'
     }
+    shortcutIcon = EXT:corporate/Resources/Public/Assets/favicon.ico
     10 {
         paths.100 = EXT:corporate/Resources/Private/Templates/
         variables {
