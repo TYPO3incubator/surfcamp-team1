@@ -58,7 +58,7 @@
       display: flex;
       flex-basis: calc(50% - 2*$spacing-md);
       flex-direction: column;
-      row-gap: $spacing-sm;
+      row-gap: $spacing-md;
       column-gap: $spacing-md;
     }
   }
