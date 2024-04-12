@@ -1,9 +1,19 @@
 corporate:
   social_media:
-    facebook: 'https://www.facebook.com/'
-    instagram: 'https://www.instagram.com/'
-    x: 'https://twitter.com/'
-    tiktok: 'https://www.tiktok.com/'
+    text: 'Follow us on'
+    links:
+      facebook: 'https://www.facebook.com/'
+      instagram: 'https://www.instagram.com/'
+      x: 'https://twitter.com/'
+      tiktok: ''
+      linkedin: 'https://linkedin.com/'
   pages:
     footerPid: 6
     logo: '/'
+  content:
+    footer:
+      trademark: ' 2024 Surfcamp. All rights reserved.'
+    information:
+      email: info@outdoorallround.com
+      phone: + 123456789
+      address: Av. del Istmo, 6, 35627 La Pared, Las Palmas
