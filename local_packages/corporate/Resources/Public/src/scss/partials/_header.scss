@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:-30px auto;
+  margin:-10px auto;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -33,14 +33,15 @@
   display: none;
   color: $color-light;
   height: 100px;
-  width: auto;
+  width: 200px;
 }
 
 #base-header--logo-mobile{
   color: $color-light;
   display: flex;
+  justify-content: center;
   height: 64px;
-  width: auto;
+  width: 160px;
 }
 
 
@@ -52,6 +53,9 @@
 }
 
 @media (min-width: 768px) {
+  .base-header--logo {
+    margin:-30px auto;
+  }
   .base-header--navigation{
     display: inherit;
   }
