@@ -15,7 +15,7 @@
   }
 
   &-media {
-    height: 100dvh;
+    height: calc(100dvh - 8rem);
     width: 100vw;
     object-fit: cover;
   }

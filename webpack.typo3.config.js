@@ -17,7 +17,7 @@ config.plugins[0] = new CleanWebpackPlugin(
 );
 
 config.plugins[1] = new MiniCssExtractPlugin({
-    filename: 'main.css',
+    filename: '[name].css',
     chunkFilename: '[id].css'
 });
 

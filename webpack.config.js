@@ -1,11 +1,10 @@
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-
 module.exports = {
     entry: ['./local_packages/corporate/Resources/Public/src/app.js', './local_packages/corporate/Resources/Public/src/scss/app.scss'],
     output: {
-        filename: 'main.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, './local_packages/corporate/Resources/Public/Dist'),
     },
     devServer: {
@@ -15,6 +14,9 @@ module.exports = {
         host: '0.0.0.0',
         open: true,
         hot: true
+    },
+    optimization: {
+        runtimeChunk: 'single',
     },
     devtool: 'eval-source-map',
     target: 'web',
