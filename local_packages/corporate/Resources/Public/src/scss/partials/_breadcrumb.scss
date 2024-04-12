@@ -10,6 +10,10 @@
     align-items: center;
     column-gap: $spacing-xs;
 
+    .breadcrumb-item {
+      list-style: none;
+    }
+
     .breadcrumb-item, .breadcrumb-link {
       color: $color-dark;
       font-size: 0.75rem;
