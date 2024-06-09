@@ -2256,7 +2256,7 @@
         },
         {
             "name": "surfcamp/corporation",
-            "version": "dev-main",
+            "version": "dev-task/design-rework-prototype",
             "dist": {
                 "type": "path",
                 "url": "local_packages/corporate",

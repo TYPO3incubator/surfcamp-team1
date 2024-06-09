@@ -21,7 +21,7 @@ form {
 
   .checkbox {
     &.products {
-      margin-bottom: $spacing-2xl;
+      margin-bottom: $spacing-xl;
 
       .inputs-list {
         display: flex;
@@ -192,7 +192,7 @@ form {
 
       .btn {
         margin-top: $spacing-sm;
-        margin-bottom: $spacing-2xl;
+        margin-bottom: $spacing-xl;
         height: 2.75rem;
         width: 100%;
         display: flex;

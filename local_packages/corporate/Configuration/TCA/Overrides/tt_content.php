@@ -142,6 +142,7 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_card'] = [
     'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                --palette--;;general,
+              header,
               card_items,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                --palette--;;hidden,

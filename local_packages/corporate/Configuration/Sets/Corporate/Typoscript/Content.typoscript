@@ -14,6 +14,7 @@ lib.dynamicContent {
 lib.contentElement {
     templateRootPaths.100 = EXT:corporate/Resources/Private/Content/Templates/
     partialRootPaths.100 = EXT:corporate/Resources/Private/Content/Partials/
+    layoutRootPaths.100 = EXT:corporate/Resources/Private/Content/Layouts/
     dataProcessing.10 = files
     dataProcessing.10 {
         as = images

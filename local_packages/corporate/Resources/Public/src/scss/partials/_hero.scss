@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   overflow: hidden;
+  margin-bottom: $spacing-2xl;
 
   &-text {
     display: flex;
