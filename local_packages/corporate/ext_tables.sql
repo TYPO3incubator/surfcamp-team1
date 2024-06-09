@@ -1,5 +1,7 @@
 CREATE TABLE tt_content (
-    card_items int(11) unsigned DEFAULT '0' NOT NULL
+    card_items     int(11) unsigned DEFAULT '0' NOT NULL,
+    scroll_to_link varchar(2048)    DEFAULT ''  NOT NULL
+
 );
 
 CREATE TABLE tx_surfcampcorporate_domain_model_product (

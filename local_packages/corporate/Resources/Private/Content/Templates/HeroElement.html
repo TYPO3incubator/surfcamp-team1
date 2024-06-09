@@ -8,10 +8,13 @@
                         <p>{data.bodytext}</p>
                         <f:render partial="TextButton" arguments="{link:data.header_link, link-text:data.subheader}" />
                     </div>
-                    <a href="#product-teaser" class="hero-scroll">
-                        <div class="mouse"></div>
-                        <div class="text">Scroll down</div>
-                    </a>
+
+                    <f:if condition="{data.scroll_to_link}">
+                        <f:link.typolink parameter="{data.scroll_to_link}" class="hero-scroll">
+                            <div class="mouse"></div>
+                            <div class="text">Scroll down</div>
+                        </f:link.typolink>
+                    </f:if>
                 </div>
             </div>
         </div>

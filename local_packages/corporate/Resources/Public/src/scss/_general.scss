@@ -39,10 +39,7 @@ footer{
   }
 }
 
-#product-teaser{
-  scroll-margin-top: 82px;
-}
-
 .frame {
   margin-bottom: $spacing-2xl;
+  scroll-margin-top: calc(82px + $spacing-2xl);
 }

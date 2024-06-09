@@ -43,7 +43,7 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_hero'] = [
     'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                --palette--;;general,
-                media, header, bodytext, header_link, subheader,
+                media, header, bodytext, header_link, subheader, scroll_to_link,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                --palette--;;hidden,
                --palette--;;access,
@@ -120,6 +120,17 @@ $GLOBALS['TCA']['tt_content']['types']['corporate_text_button'] = [
                 'showAllLocalizationLink' => true,
                 'showPossibleLocalizationRecords' => true,
             ],
+        ],
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'scroll_to_link' => [
+        'label' => $translation . 'scroll_to_link',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'inputLink',
+            'allowedTypes' => ['page'],
         ],
     ],
 ]);
