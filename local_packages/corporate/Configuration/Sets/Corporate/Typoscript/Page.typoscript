@@ -3,7 +3,7 @@ page.10 = PAGEVIEW
 
 page {
     meta {
-        viewport = 'width=device-width, initial-scale=1'
+        viewport = width=device-width, initial-scale=1
     }
     shortcutIcon = EXT:corporate/Resources/Public/Assets/favicon.ico
     10 {
