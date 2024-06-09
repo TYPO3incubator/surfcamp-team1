@@ -5,12 +5,15 @@ namespace Surfcamp\Corporate\Controller;
 use Psr\Http\Message\ResponseInterface;
 use Surfcamp\Corporate\Domain\Model\Product;
 use Surfcamp\Corporate\Domain\Repository\ProductRepository;
+use Surfcamp\Corporate\PageTitle\RecordPageTitleProvider;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ProductController extends ActionController
 {
-    public function __construct(protected readonly ProductRepository $productRepository)
-    {
+    public function __construct(
+        protected readonly ProductRepository $productRepository,
+        protected readonly RecordPageTitleProvider $pageTitleProvider
+    ) {
     }
 
     public function teaserAction(): ResponseInterface
@@ -24,9 +27,12 @@ class ProductController extends ActionController
 
     public function showAction(Product $product): ResponseInterface
     {
+        $this->pageTitleProvider->setTitle($product->getTitle());
+
         $this->view->assignMultiple([
             'product' => $product,
         ]);
+
         return $this->htmlResponse();
 
     }

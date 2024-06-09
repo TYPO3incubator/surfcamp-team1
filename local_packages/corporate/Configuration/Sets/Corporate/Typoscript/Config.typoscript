@@ -1,0 +1,10 @@
+config {
+    contentObjectExceptionHandler = 0
+
+    pageTitleProviders {
+        recordDetailPage {
+            provider = Surfcamp\Corporate\PageTitle\RecordPageTitleProvider
+            before = record
+        }
+    }
+}
