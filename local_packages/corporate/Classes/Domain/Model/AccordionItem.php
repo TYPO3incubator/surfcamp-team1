@@ -7,15 +7,9 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 class AccordionItem extends AbstractEntity
 {
 
-    /**
-     * @var string
-     */
-    protected $header = '';
+    protected string $header = '';
 
-    /**
-     * @var string
-     */
-    protected $bodytext = '';
+    protected string $bodytext = '';
 
     public function getHeader(): string
     {

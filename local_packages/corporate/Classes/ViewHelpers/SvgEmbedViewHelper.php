@@ -27,7 +27,7 @@ class SvgEmbedViewHelper extends AbstractViewHelper
     {
         $image = $this->arguments['image'];
 
-        if(is_string($image)){
+        if (is_string($image)) {
             return file_get_contents(GeneralUtility::getFileAbsFileName($image));
         }
 
