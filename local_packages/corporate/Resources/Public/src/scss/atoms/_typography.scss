@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'Merriweather';
-  src: url('./fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+  src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MerriweatherSans';
-  src: url('./fonts/Merriweather_Sans/static/MerriweatherSans-Regular.ttf') format('truetype');
+  src: url('../fonts/Merriweather_Sans/static/MerriweatherSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 html {
-  font-family: 'Merriweather', serif;
+  font-family: 'MerriweatherSans', sans-serif;
   line-height: 1.5rem;
   margin: 0;
 }
