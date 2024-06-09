@@ -10,6 +10,10 @@
                 <source>Become a Retailer</source>
                 <target>Händler werden</target>
             </trans-unit>
+            <trans-unit id="product.teaser.link_label">
+                <source>Read more</source>
+                <target>Mehr lesen</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

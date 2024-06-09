@@ -1,6 +1,6 @@
 .base-header {
   position: fixed;
-  background-color: $color-dark;
+  background-color: $color-tan;
   width: 100%;
   padding: $spacing-md;
   z-index: 2;
@@ -36,7 +36,7 @@
 }
 
 .base-header--logo {
-  color: $color-light;
+  color: $color-dark;
   transition: all 0.3s ease;
 
 }
@@ -49,7 +49,7 @@ html.header-scroll {
 
 #base-header--logo-default{
   display: flex;
-  color: $color-light;
+  color: $color-primary-100;
   height: 100px;
   width: 200px;
   html.header-scroll & {
@@ -92,7 +92,12 @@ html.header-scroll {
   }
   #base-header--logo-default{
     display: flex;
-    color: $color-light;
     height: 100px;
+  }
+}
+
+.language-menu {
+  option {
+    text-transform: capitalize;
   }
 }

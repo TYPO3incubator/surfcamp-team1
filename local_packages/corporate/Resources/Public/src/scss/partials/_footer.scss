@@ -1,5 +1,5 @@
 .base-footer {
-  background-color: $color-dark;
+  background-color: $color-tan;
 
   width: 100%;
   color: $color-light;
@@ -10,7 +10,7 @@
   }
 
   p, h3 {
-    color: #ffffff;
+    color: $color-white;
     line-height: 1.5;
   }
 }
@@ -57,6 +57,8 @@
 
     .footer-menu {
       display: flex;
+      list-style-type: none;
+      padding-left: 0;
       flex-basis: calc(50% - 2*$spacing-md);
       flex-direction: column;
       row-gap: $spacing-md;
@@ -71,6 +73,8 @@
 
     .social-icons {
       display: flex;
+      list-style-type: none;
+      padding-left: 0;
       flex-direction: row;
       row-gap: $spacing-md;
       column-gap: $spacing-md;

@@ -9,29 +9,64 @@
    position: relative;
    padding: 0.25rem;
 
+   .card-link {
+      display: block;
+      overflow: hidden;
+      border-radius: 10px;
+
+      &:hover .card-img-top {
+         transform: scale(1.05);
+      }
+   }
+
+   .card-img-top {
+      transition: transform .5s ease;
+      transform: scale(1.1);
+      border-radius: 10px;
+   }
+
+   .categories {
+      .category{
+         padding: 4px 8px;
+         background: $color-secondary;
+      }
+   }
+
    @media (min-width: 768px) {
       padding: 0.5rem;
    }
 }
 
 .card-body {
+   color: #fff;
    position: absolute;
    bottom: 0;
    right: 0;
    width: 100%;
+   padding: 2.8rem;
 
-   .base-button--text{
-      margin: 1rem;
-      @include md-screen() {
-         margin: 1.5rem;
-      }
+   .categories {
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      font-size: 0.8rem;
    }
 
+   .card-title{
+      font-size: 2.2em;
+      line-height: 1em;
+      margin-bottom: 14px;
+   }
+
+   .card-btn{
+      display: flex;
+      align-items: center;
+
+      .card-btn-label {
+         margin-right: 8px;
+      }
+   }
 }
 
-.card-link {
-   color: var(--color-dark);;
-}
 
 .card-img-top {
    width: 100%;

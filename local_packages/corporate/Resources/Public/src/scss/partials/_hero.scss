@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  overflow: hidden;
 
   &-text {
     display: flex;
@@ -8,7 +9,7 @@
     position: absolute;
     bottom: 15%;
     right: 6%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(217, 217, 217, 0.8);
     border-radius: 1rem;
     padding: 3rem;
     text-align: right;
@@ -17,8 +18,12 @@
     text-overflow: ellipsis;
     max-height: 80%;
     p {
+      color: $color-dark;
       margin-bottom: 1.5rem;
       line-height: 1.5;
+    }
+    h2{
+      color: $color-primary-100;
     }
     .base-button{
       display: flex;

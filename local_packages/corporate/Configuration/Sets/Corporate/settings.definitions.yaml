@@ -13,17 +13,22 @@ settings:
     label: 'Primary color'
     description: ''
     type: string
-    default: 'rgb(210,222,50)'
+    default: 'rgb(42, 81, 52)'
+  corporate.styles.colors.secondary:
+    label: 'Secondary color'
+    description: ''
+    type: string
+    default: 'rgb(210, 105, 17)'
   corporate.styles.colors.light:
     label: 'Logo Light color'
     description: ''
     type: string
-    default: 'rgb(255,255 ,255)'
+    default: 'rgb(217, 217, 217)'
   corporate.styles.colors.dark:
     label: 'Dark color'
     description: ''
     type: string
-    default: 'rgb(1,106,112)'
+    default: 'rgb(95, 106, 106)'
   corporate.social_media.text:
     label: 'Social media Text'
     description: 'Social media Text'

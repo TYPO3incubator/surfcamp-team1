@@ -8,5 +8,12 @@ $color-primary-40: rgb(237, 242, 173);
 $color-primary-30: rgb(242, 245, 194);
 $color-primary-20: rgb(246, 248, 214);
 $color-primary-10: rgb(251, 252, 235);
+$color-secondary: var(--color-secondary) !default;
 $color-light: var(--color-light) !default;
 $color-dark: var(--color-dark) !default;
+
+// @todo integrate into set options
+$color-white: #fafafa;
+$color-tan: #D8C3A5;
+$color-yellow: #E8C547;
+$color-teal: #2F6C6D;

@@ -4,17 +4,31 @@
   gap: $spacing-md;
   align-items: center;
   width: 100%;
-  overflow-x: scroll;
+}
+
+.nav--menu-item:before {
+  background-color: transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out, background-color .3s ease-in-out;
+  width: 100%;
 }
 
 .nav--menu-item {
-  font-size: 1em;
+  position: relative;
+  font-size: 0.95em;
   text-decoration: none;
-  color: $color-light;
-  border-bottom: 1px solid transparent;
+  color: $color-primary-100;
+  text-transform: uppercase;
+  padding: 8px 0;
 
   @media (min-width: 768px) {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -24,6 +38,9 @@
   }
 
   .nav--menu-item:hover {
-    border-bottom: 1px solid $color-primary-100;
+    &:before {
+      background-color: $color-primary-100;
+      transform: scaleX(1);
+    }
   }
 }
