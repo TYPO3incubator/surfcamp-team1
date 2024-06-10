@@ -1,0 +1,11 @@
+.categories {
+   color: $color-white;
+   text-transform: uppercase;
+   margin-bottom: 14px;
+   font-size: 0.8rem;
+   .category{
+      padding: 4px 8px;
+      background: $color-secondary;
+      margin-right: 3px;
+   }
+}

@@ -38,6 +38,7 @@
   }
 
   .nav--menu-item:hover {
+    color: $color-primary-100;
     &:before {
       background-color: $color-primary-100;
       transform: scaleX(1);

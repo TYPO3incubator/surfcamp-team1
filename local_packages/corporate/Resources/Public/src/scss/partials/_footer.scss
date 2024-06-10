@@ -1,5 +1,5 @@
 .base-footer {
-  background-color: $color-tan;
+  background-color: $color-dark;
 
   width: 100%;
   color: $color-light;
@@ -12,6 +12,10 @@
   p, h3 {
     color: $color-white;
     line-height: 1.5;
+  }
+
+  a {
+    display: inline-block;
   }
 }
 
@@ -33,6 +37,9 @@
     width: 140px;
     @media (min-width: 992px) {
       width: 180px;
+    }
+    &:after {
+      display: none;
     }
   }
 
@@ -82,14 +89,20 @@
         svg{
           height: 30px;
           width: 30px;
+          path {
+            fill: $color-link;
+          }
         }
         &:hover{
           svg{
             path{
               transition:0.5s;
-              fill: $color-primary-100;
+              fill: $color-link-hover;
             }
           }
+        }
+        &:after {
+          display: none;
         }
       }
     }

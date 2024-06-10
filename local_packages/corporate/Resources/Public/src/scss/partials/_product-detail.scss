@@ -72,16 +72,6 @@
       }
     }
   }
-
-  a.product-detail--link{
-    display: block;
-    color: $color-dark;
-    width: 100%;
-    text-align: center;
-    border-radius: $base-border-radius;
-    background-color: $color-primary-100;
-    padding: 0.75rem;
-  }
 }
 
 @include md-max-screen(){

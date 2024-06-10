@@ -52,11 +52,13 @@
             <!--Product Details-->
             <div class="col-12 col offset-md-1 col-md-6">
                 <f:if condition="{product.categories}">
-                    <f:for each="{product.categories}" as="category">
-                        <h3 class="product-detail--category">
-                            {category.title}
-                        </h3>
-                    </f:for>
+                    <div class="categories">
+                        <f:for each="{product.categories}" as="category">
+                            <span class="category">
+                                {category.title}
+                            </span>
+                        </f:for>
+                    </div>
                 </f:if>
                 <f:if condition="{product.title}">
                     <h1 class="product-detail--title large">
@@ -105,7 +107,7 @@
                     </div>
                 </f:if>
                 <f:if condition="{settings.contactFormPid}">
-                    <f:link.page class="product-detail--link base-button--text" pageUid="{settings.contactFormPid}"><f:translate key="product.detail.link_label"/></f:link.page>
+                    <f:link.page class="base-button--text" pageUid="{settings.contactFormPid}"><f:translate key="product.detail.link_label"/></f:link.page>
                 </f:if>
                 </div>
             </div>

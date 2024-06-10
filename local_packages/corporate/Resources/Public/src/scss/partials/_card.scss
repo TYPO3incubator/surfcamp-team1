@@ -18,13 +18,6 @@
       border-radius: 10px;
    }
 
-   .categories {
-      .category{
-         padding: 4px 8px;
-         background: $color-secondary;
-      }
-   }
-
    @media (min-width: 768px) {
       padding: 0.5rem;
    }
@@ -37,12 +30,6 @@
    right: 0;
    width: 100%;
    padding: 2.8rem;
-
-   .categories {
-      text-transform: uppercase;
-      margin-bottom: 14px;
-      font-size: 0.8rem;
-   }
 
    .card-title{
       font-size: 2.2em;

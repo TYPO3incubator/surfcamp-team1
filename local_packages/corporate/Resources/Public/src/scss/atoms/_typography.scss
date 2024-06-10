@@ -17,6 +17,9 @@ html {
   line-height: 1.5rem;
   margin: 0;
 }
+h1,h2 {
+  color: $color-primary-100;
+}
 h1{
   font-size: 2rem;
   line-height: 1em;
@@ -53,9 +56,9 @@ p,h1,h2,h3,h4,h5{
 
 a {
   text-decoration: none;
-  color: $color-light;
+  color: $color-link;
+  transition: color 0.2s;
     &:hover{
-      color: $color-primary-100;
-      transition:0.2s;
+      color: $color-link-hover;
     }
 }
