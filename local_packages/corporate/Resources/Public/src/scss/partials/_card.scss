@@ -5,7 +5,7 @@
    .card-link {
       display: block;
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: $border-radius-cards;
 
       &:hover .card-img-top {
          transform: scale(1.05);
@@ -15,7 +15,7 @@
    .card-img-top {
       transition: transform .5s ease;
       transform: scale(1.1);
-      border-radius: 10px;
+      border-radius: $border-radius-cards;
    }
 
    @media (min-width: 768px) {

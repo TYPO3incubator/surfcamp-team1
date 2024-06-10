@@ -1,16 +1,15 @@
 .ce-cards {
   margin: $spacing-2xl 0;
-
   .card-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-radius: $border-radius-cards;
+    overflow: hidden;
 
     .card-header {
-      height: 8.5rem;
+      height: 15em;
       .card-image {
-        border-radius: 4px 4px 0 0;
-
         object-fit: cover;
         max-width: 100%;
         height: 100%;
@@ -18,13 +17,15 @@
     }
 
     .card-bodytext {
-      background: $color-primary-20;
+      background: $color-light;
+      color: $color-dark;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       padding: 1rem;
 
       .title {
+        color: $color-primary-100;
         font-size: 1.5rem;
         margin: 0;
       }
@@ -36,6 +37,7 @@
       .bodytext{
         line-height: 1.5;
         font-size: 1rem;
+        margin-bottom: $spacing-md;
       }
     }
     .card-footer{

@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <f:for as="card" each="{cardItems}">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-3 col-xs-12">
                         <div class="card-item">
                             <div class="card-header">
                                 <f:if condition="{card.files.0}">
@@ -18,14 +18,12 @@
                                 <h3 class="title">{card.data.header}</h3>
                                 <span class="date">{card.data.date -> f:format.date()}</span>
                                 <div class="bodytext">{card.data.bodytext -> f:format.raw()}</div>
-                            </div>
-                            <div class="card-footer">
+
                                 <f:render partial="TextButton"
                                           arguments="{link:card.data.link, link-text:card.data.link_label}"/>
                             </div>
                         </div>
                     </div>
-
                 </f:for>
             </div>
         </div>
