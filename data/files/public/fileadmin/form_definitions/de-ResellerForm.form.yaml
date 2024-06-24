@@ -1,0 +1,218 @@
+
+renderingOptions:
+  submitButtonLabel: absenden
+type: Form
+identifier: de-ResellerForm
+label: 'de-Reseller Form'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'New reseller request'
+      recipients:
+        info@outdoor-allround.com: Corporate
+      senderAddress: info@outdoor-allround.com
+      senderName: 'Outdoor Allround'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Request received'
+      recipients:
+        '{email-1}': '{text-2} {text-3}'
+      senderAddress: info@outdoor-allround.com
+      senderName: 'Outdoor Allround'
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+    identifier: EmailToSender
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: 'Interessiert an'
+        renderables:
+          -
+            type: ProductList
+            identifier: productlist-1
+            label: 'Product List'
+      -
+        type: Fieldset
+        identifier: fieldset-2
+        label: 'Über das Unternehmen'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Firmenname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'your Companies name'
+              elementDescription: ''
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: textarea-1
+            label: 'Erzähl uns etwas über das Unternehmen'
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Tell us something about you'
+      -
+        type: Fieldset
+        identifier: fieldset-3
+        label: 'Direkter Ansprechpartner'
+        renderables:
+          -
+            properties:
+              options:
+                Mrs: Frau
+                Mr: Herr
+              fluidAdditionalAttributes:
+                required: required
+            type: RadioButton
+            identifier: radiobutton-1
+            label: ''
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            type: GridRow
+            identifier: gridrow-1
+            label: 'Grid: Row'
+            renderables:
+              -
+                defaultValue: ''
+                type: Text
+                identifier: text-2
+                label: Vorname
+                properties:
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      xxl:
+                        numbersOfColumnsToUse: '6'
+                      xl:
+                        numbersOfColumnsToUse: '6'
+                      lg:
+                        numbersOfColumnsToUse: '6'
+                      md:
+                        numbersOfColumnsToUse: '6'
+                      sm:
+                        numbersOfColumnsToUse: '12'
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                  fluidAdditionalAttributes:
+                    required: required
+                    placeholder: Vorname
+                validators:
+                  -
+                    identifier: NotEmpty
+              -
+                defaultValue: ''
+                type: Text
+                identifier: text-3
+                label: Nachname
+                properties:
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      xxl:
+                        numbersOfColumnsToUse: '6'
+                      xl:
+                        numbersOfColumnsToUse: '6'
+                      lg:
+                        numbersOfColumnsToUse: '6'
+                      md:
+                        numbersOfColumnsToUse: '6'
+                      sm:
+                        numbersOfColumnsToUse: '12'
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                  fluidAdditionalAttributes:
+                    required: required
+                    placeholder: Nachname
+                validators:
+                  -
+                    identifier: NotEmpty
+          -
+            type: GridRow
+            identifier: gridrow-2
+            label: 'Grid: Row'
+            renderables:
+              -
+                defaultValue: ''
+                type: Email
+                identifier: email-1
+                label: E-mail
+                properties:
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      xxl:
+                        numbersOfColumnsToUse: '6'
+                      xl:
+                        numbersOfColumnsToUse: '6'
+                      lg:
+                        numbersOfColumnsToUse: '6'
+                      md:
+                        numbersOfColumnsToUse: '6'
+                      sm:
+                        numbersOfColumnsToUse: '12'
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                  fluidAdditionalAttributes:
+                    required: required
+                    placeholder: 'Email address'
+                validators:
+                  -
+                    identifier: EmailAddress
+                  -
+                    identifier: NotEmpty
+              -
+                defaultValue: ''
+                type: Telephone
+                identifier: telephone-1
+                label: Telefonnummer
+                properties:
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      xxl:
+                        numbersOfColumnsToUse: '6'
+                      xl:
+                        numbersOfColumnsToUse: '6'
+                      lg:
+                        numbersOfColumnsToUse: '6'
+                      md:
+                        numbersOfColumnsToUse: '6'
+                      sm:
+                        numbersOfColumnsToUse: '12'
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                  fluidAdditionalAttributes:
+                    required: required
+                    placeholder: 'Telephone number'
+                validators:
+                  -
+                    identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: textarea-2
+            label: 'und sonst so?'
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'weitere Informationen'
